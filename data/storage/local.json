@@ -1,6 +1,6 @@
 {
   "kmind-zen:license:lastKnownSiyuanId": "1789139779047",
-  "kmind-zen:license:lastSeenAtMs": "1790474186140",
+  "kmind-zen:license:lastSeenAtMs": "1790477257750",
   "kmind-zen:siyuan:onboarding:v1:seen": "1",
   "kmind-zen:updateDialog:state:v1": "{\"initialized\":{\"siyuan\":true},\"lastObservedVersion\":{\"siyuan\":\"0.44.0\"},\"readVersions\":{\"updateDialog.readVersion.siyuan.0.44.0\":true},\"pendingReminderVersion\":{},\"noticeExposed\":{},\"noticeClicked\":{},\"tutorialExposed\":{},\"tutorialClicked\":{}}",
   "local-bazaar": {
@@ -16,37 +16,6 @@
     "widget": "0"
   },
   "local-closed-tabs": [
-    {
-      "active": true,
-      "activeTime": "1789554027419",
-      "children": {
-        "customModelData": {
-          "bookInfo": {
-            "title": "微信读书 API Key"
-          },
-          "url": "https://weread.qq.com/r/weread-skills"
-        },
-        "customModelType": "siyuan-sireaderonline_reader",
-        "instance": "Custom"
-      },
-      "icon": "siyuan-reader-icon",
-      "instance": "Tab",
-      "pin": false,
-      "title": "微信读书 API Key"
-    },
-    {
-      "active": true,
-      "activeTime": "1789554027430",
-      "children": {
-        "customModelData": {},
-        "customModelType": "siyuan-sireaderweread",
-        "instance": "Custom"
-      },
-      "icon": "iconWeread",
-      "instance": "Tab",
-      "pin": false,
-      "title": "微信读书"
-    },
     {
       "active": true,
       "activeTime": "1789554074312",
@@ -1091,6 +1060,36 @@
       "instance": "Tab",
       "pin": false,
       "title": "备考"
+    },
+    {
+      "activeTime": "1790347469359",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260925224417-r7nk028",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260925104228-i9y4wde",
+        "rootId": "20260925224417-r7nk028"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "408"
+    },
+    {
+      "activeTime": "1790427074302",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260925224430-72xdufo",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260925104228-i9y4wde",
+        "rootId": "20260925224430-72xdufo"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "计网"
     }
   ],
   "local-dailynoteid": "20260925104228-i9y4wde",
@@ -1260,6 +1259,9 @@
     },
     "20260916183232-z7ywujz": {
       "endId": "20260927092749-b1ormo2",
+      "focusEnd": 4,
+      "focusId": "20260916183232-z7ywujz",
+      "focusStart": 4,
       "rootId": "20260916183232-z7ywujz",
       "scrollTop": 0,
       "startId": "20260916183232-hy7ap55"
@@ -1398,8 +1400,7 @@
     {
       "notebookId": "20260925104228-i9y4wde",
       "openPaths": [
-        "/20260925111707-62operl/20260925112015-zyciqnm.sy",
-        "/20260925104648-0iaysvu/20260925113226-tx8epj2.sy"
+        "/20260925111707-62operl/20260925112015-zyciqnm.sy"
       ]
     }
   ],
