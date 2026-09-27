@@ -1,0 +1,36 @@
+{
+    "plugin": {
+        "name": "LocalBrowse",
+        "description": "Browse local files in dock panel. Double-click to insert as local link, or right-click to copy to assets"
+    },
+    "panel": {
+        "title": "Select a file from local storage",
+        "dockTitle": "Local Files",
+        "browse": "Browse Files",
+        "noDrive": "No accessible storage found",
+        "insert": "Insert as Attachment",
+        "loading": "Loading...",
+        "empty": "This directory is empty",
+        "error": "Failed to load"
+    },
+    "notification": {
+        "success": "File inserted as attachment successfully",
+        "error": "Failed to insert file",
+        "selectFile": "Please select a file first"
+    },
+    "settings": {
+        "title": "LocalBrowse Configuration",
+        "mountPath": "Mount Path",
+        "addPath": "Add Custom Path",
+        "removePath": "Remove",
+        "customPathPlaceholder": "Enter custom path (e.g., /home/user/MyCloud or D:\\MyCloud)"
+    },
+    "hints": {
+        "ensureMounted": "Make sure the volume is mounted and accessible",
+        "addCustom": "Or add a custom path in settings",
+        "hevcWasmLoading": "HEVC software decoder in development, using transcoding mode...",
+        "codecUnsupported": "Video codec not supported, auto-transcoding...",
+        "hevcTryHardware": "Trying HEVC hardware decoding...",
+        "transcodeFailed": "Transcoding failed, please try opening with system player"
+    }
+}

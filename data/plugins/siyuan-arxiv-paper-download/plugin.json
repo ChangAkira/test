@@ -1,0 +1,30 @@
+{
+  "name": "siyuan-arxiv-paper-download",
+  "author": "Jasaxion(BaiBo)",
+  "url": "https://github.com/Jasaxion/siyuan-arxiv-paper-download",
+  "version": "0.1.5",
+  "minAppVersion": "3.3.0",
+  "backends": ["all"],
+  "frontends": ["all"],
+  "disabledInPublish": true,
+  "displayName": {
+    "default": "arXiv Paper Downloader",
+    "zh_CN": "arXiv 论文下载器"
+  },
+  "description": {
+    "default": "Insert and download arXiv papers directly into SiYuan.",
+    "zh_CN": "在思源笔记中直接插入并下载 arXiv 论文 PDF。"
+  },
+  "readme": {
+    "default": "README.md",
+    "zh_CN": "README_zh_CN.md"
+  },
+  "funding": {
+    "custom": [
+      "https://github.com/Jasaxion"
+    ]
+  },
+  "keywords": [
+    "pdf"
+  ]
+}

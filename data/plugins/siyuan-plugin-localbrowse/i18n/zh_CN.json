@@ -1,0 +1,36 @@
+{
+    "plugin": {
+        "name": "本地文件浏览器",
+        "description": "在Dock面板快速浏览本地文件，便捷插入本地文件链接为思源附件"
+    },
+    "panel": {
+        "title": "从本地存储选择文件",
+        "dockTitle": "本地文件",
+        "browse": "浏览文件",
+        "noDrive": "未检测到可访问的存储",
+        "insert": "插入为附件",
+        "loading": "加载中...",
+        "empty": "此目录为空",
+        "error": "加载失败"
+    },
+    "notification": {
+        "success": "文件已成功插入为附件",
+        "error": "插入文件失败",
+        "selectFile": "请先选择一个文件"
+    },
+    "settings": {
+        "title": "本地文件浏览器配置",
+        "mountPath": "挂载路径",
+        "addPath": "添加自定义路径",
+        "removePath": "移除",
+        "customPathPlaceholder": "输入自定义路径（如 /home/用户/我的云盘 或 D:\\我的云盘）"
+    },
+    "hints": {
+        "ensureMounted": "请确保存储路径可访问",
+        "addCustom": "或在设置中添加自定义路径",
+        "hevcWasmLoading": "HEVC 软解播放器开发中，当前使用转码模式...",
+        "codecUnsupported": "视频编码不支持，正在自动转码...",
+        "hevcTryHardware": "正在尝试 HEVC 硬件解码...",
+        "transcodeFailed": "转码失败，请尝试使用系统播放器打开"
+    }
+}

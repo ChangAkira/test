@@ -1,0 +1,45 @@
+{
+  "name": "siyuan-plugin-blockref-footnote",
+  "author": "Achuan-2",
+  "url": "https://github.com/Achuan-2/siyuan-plugin-blockref-footnote",
+  "version": "1.6.3",
+  "minAppVersion": "3.7.0",
+  "backends": [
+    "windows",
+    "linux",
+    "darwin",
+    "docker",
+    "ios",
+    "android",
+    "harmony"
+  ],
+  "frontends": [
+    "desktop",
+    "mobile",
+    "browser-desktop",
+    "browser-mobile",
+    "desktop-window"
+  ],
+  "displayName": {
+    "default": "FootnoteRef",
+    "zh_CN": "块引脚注"
+  },
+  "description": {
+    "default": "Use blockref to implement footnote and memo",
+    "zh_CN": "使用思源的块引实现脚注和备注功能"
+  },
+  "readme": {
+    "default": "README.md",
+    "zh_CN": "README_zh_CN.md"
+  },
+  "funding": {
+    "custom": [
+    ]
+  },
+  "keywords": [
+    "脚注",
+    "Footnote",
+    "备注",
+    "Memo"
+  ]
+}

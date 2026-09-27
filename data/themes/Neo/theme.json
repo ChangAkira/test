@@ -1,0 +1,35 @@
+{
+  "name": "Neo",
+  "author": "QYL",
+  "url": "https://github.com/QYLexpired/Neo",
+  "version": "1.6.2",
+  "minAppVersion": "3.8.0",
+  "displayName": {
+    "default": "Neo"
+  },
+  "description": {
+    "default": "An Apple-inspired, meticulously crafted, production-grade theme",
+    "zh-CN": "以 Apple 设计语言为灵感，精心打磨的毕业级主题",
+    "zh-TW": "以 Apple 設計語言為靈感，精心打磨的畢業級主題"
+  },
+  "readme": {
+    "default": "README.md",
+    "zh-CN": "README.zh-CN.md",
+    "zh-TW": "README.zh-TW.md"
+  },
+  "funding": {
+    "custom": ["https://icnmjy02sv9g.feishu.cn/wiki/FekNwrtB7ia1WckYelRckwzZnig?from=from_copylink"]
+  },
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "frontends": [
+    "all"
+  ],
+  "keywords": [
+    "Apple",
+    "macOS",
+    "Cupertino"
+  ]
+}

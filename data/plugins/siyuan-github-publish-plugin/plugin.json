@@ -1,0 +1,32 @@
+{
+  "name": "siyuan-github-publish-plugin",
+  "author": "WuRang",
+  "url": "https://github.com/sonicrang/siyuan-github-publish-plugin",
+  "version": "0.1.0",
+  "minAppVersion": "3.2.1",
+  "backends": ["all"],
+  "frontends": ["all"],
+  "disabledInPublish": true,
+  "displayName": {
+    "default": "GitHub Publish Plugin",
+    "zh_CN": "GitHub 发布插件"
+  },
+  "description": {
+    "default": "Publish SiYuan notes to GitHub repository",
+    "zh_CN": "将思源笔记发布到 GitHub 仓库"
+  },
+  "readme": {
+    "default": "README.md",
+    "zh_CN": "README_zh_CN.md"
+  },
+  "funding": {
+    "custom": [
+      ""
+    ]
+  },
+  "keywords": [
+    "export",
+    "GitHub发布",
+    "导出"
+  ]
+}

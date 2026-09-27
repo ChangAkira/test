@@ -1,0 +1,27 @@
+{
+  "name": "siyuan-plugin-math-enhance",
+  "author": "zxhd863943427",
+  "url": "https://github.com/zxhd863943427/siyuan-plugin-math-enhance",
+  "version": "0.0.7",
+  "minAppVersion": "2.8.10",
+  "displayName": {
+    "default": "siyuan-plugin-math-enhance",
+    "zh_CN": "数学增强"
+  },
+  "description": {
+    "default": "Let your cat write math formulas happily.",
+    "zh_CN": "让你家的猫猫能快乐地写数学公式"
+  },
+  "readme": {
+    "default": "README.md",
+    "zh_CN": "README_zh_CN.md"
+  },
+  "funding": {
+    "openCollective": "",
+    "patreon": "",
+    "github": "",
+    "custom": [
+      "https://afdian.net/a/zxhd86"
+    ]
+  }
+}

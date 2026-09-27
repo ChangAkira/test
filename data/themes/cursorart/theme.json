@@ -1,0 +1,41 @@
+{
+  "name": "cursorart",
+  "author": "fyuan",
+  "url": "https://github.com/fyuanace/cursorart",
+  "version": "2.0.11",
+  "minAppVersion": "3.1.0",
+  "displayName": {
+    "default": "cursor极简",
+    "zh-CN": "cursor极简"
+  },
+  "description": {
+    "default": "Inspired by Cursor and Notion: a clean, modern layout and interaction. Please install the cursor极简 theme and the cursor极简工具 plugin together.",
+    "zh-CN": "参考 Cursor 和 Notion 优化布局和交互，主打简洁、现代化。请务必同时安装主题「cursor极简」和插件「cursor极简工具」，配套使用。"
+  },
+  "readme": {
+    "default": "README.md",
+    "zh-CN": "README_zh_CN.md"
+  },
+  "icon": "icon.png",
+  "preview": "preview.png",
+  "funding": {
+    "openCollective": "",
+    "patreon": "",
+    "github": "",
+    "custom": [
+      "https://siyuan.ysoft.site"
+    ]
+  },
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "keywords": [
+    "cursor",
+    "notion",
+    "minimal",
+    "极简",
+    "daylight",
+    "midnight"
+  ]
+}

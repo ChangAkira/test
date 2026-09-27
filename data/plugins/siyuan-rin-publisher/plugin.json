@@ -1,0 +1,40 @@
+{
+  "name": "siyuan-rin-publisher",
+  "author": "MianJu",
+  "url": "https://github.com/MianJu28/siyuan-rin-publisher",
+  "version": "0.4.4",
+  "minAppVersion": "3.1.0",
+  "kernels": [
+    "all"
+  ],
+  "backends": [
+    "all"
+  ],
+  "frontends": [
+    "all"
+  ],
+  "disabledInPublish": false,
+  "displayName": {
+    "default": "Rin Publisher",
+    "zh-CN": "Rin 发布"
+  },
+  "description": {
+    "default": "Publish current SiYuan note to Rin blog: auto-upload local images, custom publish options (public/draft/tags/summary/alias), one-click publish and update.",
+    "zh-CN": "将思源笔记一键发布到 Rin 博客：自动上传并替换本地图片，支持自定义发布（公开/草稿/标签/简介/别名），一键发布与更新。"
+  },
+  "readme": {
+    "default": "README.md"
+  },
+  "funding": {
+    "openCollective": "",
+    "patreon": "",
+    "github": "",
+    "custom": []
+  },
+  "keywords": [
+    "rin",
+    "publisher",
+    "博客发布",
+    "blog publishing"
+  ]
+}

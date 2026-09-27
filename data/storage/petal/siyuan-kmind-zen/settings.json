@@ -1,0 +1,48 @@
+{
+  "interfaceEntries": {
+    "doctreeMenuPlacement": "direct",
+    "showDocumentMapButton": true
+  },
+  "schemaVersion": 1,
+  "updatedAt": 1790427074126,
+  "viewModes": {
+    "zenMode": false,
+    "readOnly": false
+  },
+  "nodeEntryControls": {
+    "showAddChildButton": true,
+    "showNodeMenuTrigger": true
+  },
+  "imageCompression": {
+    "enabled": true
+  },
+  "blockMapPreview": {
+    "pngScale": 1
+  },
+  "canvasInteraction": {
+    "dragMode": "pan-first",
+    "wheelBehavior": "zoom",
+    "tipShown": true
+  },
+  "guide": {
+    "interactiveGuideSeenVersion": 0
+  },
+  "createdDocument": {
+    "openPosition": "current"
+  },
+  "mapCreation": {
+    "generalThemePresetId": "kmind-material-3-slate",
+    "doctreeThemePresetId": null,
+    "dockThemePresetId": null,
+    "blockThemePresetId": null,
+    "docMapThemePresetId": null,
+    "generalTemplateId": null,
+    "doctreeTemplateId": null,
+    "dockTemplateId": null,
+    "blockTemplateId": null,
+    "docMapTemplateId": null,
+    "docMapMode": "outline",
+    "densityPresetId": "default",
+    "docMapLayout": "logical-right"
+  }
+}

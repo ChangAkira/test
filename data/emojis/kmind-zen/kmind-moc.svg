@@ -1,0 +1,12 @@
+<svg width="75.09" height="75.09" viewBox="0 0 75.09 75.09" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0"
+    width="75.09" height="75.09"
+    rx="10" ry="10"
+    fill="rgba(45, 55, 72, 1)"
+    stroke="rgba(255, 255, 255, 1)"
+    stroke-width="0"
+    class="border-element" />
+  <g transform="translate(10, 16.930000000000003)">
+    <g id="svgGroup" stroke-linecap="round" fill-rule="evenodd" font-size="9pt" stroke="rgba(0, 0, 0, 1)" stroke-width="0.25mm" fill="rgba(255, 255, 255, 1)" style="stroke:rgba(0, 0, 0, 1);stroke-width:0.25mm;fill:rgba(255, 255, 255, 1)"><path d="M 0.07 7.07 L 0.07 0 L 18.55 0 L 27.93 25.55 L 36.4 0 L 55.09 0 L 55.09 7.07 L 49.14 7.07 L 49.14 34.16 L 55.09 34.16 L 55.09 41.23 L 36.54 41.23 L 36.54 34.16 L 41.02 34.16 L 41.02 5.74 L 38.22 15.12 L 30.8 36.26 L 24.85 36.26 L 16.31 14.28 L 13.51 6.23 L 13.44 34.16 L 18.06 34.16 L 18.06 41.23 L 0 41.23 L 0 34.16 L 5.95 34.16 L 5.95 7.07 L 0.07 7.07 Z"/></g>
+  </g>
+</svg>

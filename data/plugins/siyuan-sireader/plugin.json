@@ -1,0 +1,43 @@
+{
+  "name": "siyuan-sireader",
+  "author": "mm-o",
+  "url": "https://github.com/mm-o/siyuan-sireader",
+  "version": "2.2.8",
+  "minAppVersion": "2.10.14",
+  "disabledInPublish": true,
+  "backends": [
+    "all"
+  ],
+  "frontends": [
+    "all"
+  ],
+  "displayName": {
+    "default": "SiReader",
+    "en_US": "SiReader",
+    "zh_CN": "思阅"
+  },
+  "description": {
+    "default": "专业电子书阅读器，支持 EPUB/PDF/MOBI/TXT/在线小说；PDF 支持高亮、墨迹、形状、表单、印章、签名、图片、截图、搜索、打印、导出和回链，并提供标注笔记、词典、翻译、主题与书架管理",
+    "en_US": "Professional eBook reader for EPUB/PDF/MOBI/TXT/online novels. PDFs support highlights, ink, shapes, forms, stamps, signatures, images, screenshots, search, printing, export, and backlinks, with annotation notes, dictionary, translation, themes, and bookshelf management.",
+    "zh_CN": "专业电子书阅读器，支持 EPUB/PDF/MOBI/TXT/在线小说；PDF 支持高亮、墨迹、形状、表单、印章、签名、图片、截图、搜索、打印、导出和回链，并提供标注笔记、词典、翻译、主题与书架管理"
+  },
+  "readme": {
+    "default": "README.md",
+    "en_US": "README.md",
+    "zh_CN": "README_zh_CN.md"
+  },
+  "funding": {
+    "custom": [
+      "https://745201.xyz/pay.jpg"
+    ]
+  },
+  "keywords": [
+    "阅读", "reading", "电子书", "ebook",
+    "pdf", "epub", "mobi", "txt", "azw3", "fb2", "cbz",
+    "sireader", "思阅",
+    "标注", "annotation", "笔记", "note", "书签", "bookmark",
+    "词典", "dictionary",
+    "书源", "book source", "在线小说", "online novel",
+    "主题", "theme"
+  ]
+}

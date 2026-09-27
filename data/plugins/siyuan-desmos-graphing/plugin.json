@@ -1,0 +1,26 @@
+{
+  "name": "siyuan-desmos-graphing",
+  "author": "Ajaykrishnan R",
+  "url": "https://github.com/TheAjaykrishnanR/siyuan-desmos-graphing",
+  "version": "0.1.0",
+  "minAppVersion": "3.6.4",
+  "backends": [
+    "all"
+  ],
+  "frontends": [
+    "all"
+  ],
+  "disabledInPublish": true,
+  "displayName": {
+    "default": "Desmos Graphing",
+    "zh_CN": "Desmos 数学绘图"
+  },
+  "description": {
+    "default": "Embed Desmos graphing calculator in SiYuan note.",
+    "zh_CN": "在思源笔记中嵌入 Desmos 数学绘图计算器。"
+  },
+  "readme": {
+    "default": "README.md",
+    "zh_CN": "README_zh_CN.md"
+  }
+}

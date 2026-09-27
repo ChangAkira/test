@@ -1,0 +1,32 @@
+{
+  "name": "siyuan-plugin-drawnix",
+  "author": "Achuan-2",
+  "url": "https://github.com/Achuan-2/siyuan-plugin-drawnix",
+  "version": "0.0.6",
+  "minAppVersion": "3.0.0",
+  "disabledInPublish": true,
+  "backends": [
+    "all"
+  ],
+  "frontends": [
+    "all"
+  ],
+  "displayName": {
+    "default": "Drawnix",
+    "zh_CN": "Drawnix"
+  },
+  "description": {
+    "default": "Create whiteboards with Drawnix, supporting mind maps, flowcharts, drawing tools, and saving as SVG/PNG",
+    "zh_CN": "使用 Drawnix 创建白板，支持脑图、流程图、画笔等多种绘图功能，支持保存为 SVG/PNG"
+  },
+  "readme": {
+    "default": "README_EN.md",
+    "zh_CN": "README.md"
+  },
+  "funding": {
+    "custom": [
+      "https://www.yuque.com/achuan-2"
+    ]
+  },
+  "keywords": []
+}

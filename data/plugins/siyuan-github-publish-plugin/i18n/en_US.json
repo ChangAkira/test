@@ -1,0 +1,66 @@
+{
+    "pluginName": "GitHub Publish Plugin",
+    "pluginDescription": "Publish SiYuan notes to GitHub repository",
+    
+    "publishToGitHub": "Publish to GitHub",
+    "publishCurrentNote": "Publish Current Note",
+    "pluginSettings": "Plugin Settings",
+    "help": "Help",
+    
+    "githubUsername": "GitHub Username",
+    "accessToken": "Access Token",
+    "repository": "Repository",
+    "branch": "Branch",
+    "basePath": "Base Path",
+    
+    "testConnection": "Test Connection",
+    "connectionSuccess": "Connection test successful! Configuration is valid.",
+    "connectionFailed": "Connection test failed",
+    
+    "publishSuccess": "Publish successful!",
+    "publishFailed": "Publish failed",
+    "configIncomplete": "Configuration incomplete",
+    "pleaseOpenNote": "Please open a note first",
+    
+    "enterFileName": "Please enter file name",
+    "cancel": "Cancel",
+    
+    "importantNote": "<strong>Note:</strong> GitHub Personal Access Token with repo permissions is required",
+    
+    "validationErrors": {
+        "usernameRequired": "GitHub username cannot be empty",
+        "tokenRequired": "Access Token cannot be empty",
+        "repoRequired": "Repository address cannot be empty",
+        "repoFormat": "Repository format should be username/repo",
+        "branchRequired": "Branch name cannot be empty"
+    },
+    
+    "uninstall": "uninstalled",
+    "allDataRemoved": "all data has been removed",
+    
+    "exportingNote": "Exporting note",
+    "processingImages": "Processing images",
+    "uploadingNote": "Uploading note",
+    "deletingPublish": "Deleting publish",
+    "deleteSuccess": "Delete successful!",
+    "deleteFailed": "Delete failed",
+    "configSaved": "Configuration saved successfully",
+    "configValidationFailed": "Configuration validation failed",
+    "configError": "Configuration error",
+    "testingConnection": "Testing connection",
+    "authFailed": "Authentication failed",
+    "repoAccessFailed": "Repository access failed",
+    "branchAccessFailed": "Branch access failed",
+    
+    "uploadFolder": "Upload folder",
+    "frontMatter": "Front Matter",
+    "deleteConfirmation": "Delete confirmation",
+    "deleteConfirmMessage": "Are you sure you want to delete the published content of note \"{noteTitle}\" from GitHub?",
+    "deleteWarning": "This operation will delete files on GitHub and cannot be undone.",
+    "confirmDelete": "Confirm delete",
+    
+    "uploadTo": "Upload Path",
+    "publishAs": "Publish Path",
+    
+    "feedback": "Feedback"
+}

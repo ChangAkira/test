@@ -1,0 +1,152 @@
+{
+  "language": "简体中文",
+  "pluginTitle": "任务列表",
+  "taskStatus": {
+    "todo": "未完成",
+    "done": "已完成",
+    "all": "全部"
+  },
+  "options": {
+    "ai": "AI",
+    "refresh": "刷新",
+    "expand": "展开",
+    "collapse": "收起",
+    "switch": "切换状态",
+    "filter": "筛选",
+    "search": "搜索"
+  },
+  "searchPlaceholder": "请输入要搜索的任务",
+  "range": {
+    "doc": "文档",
+    "box": "笔记本",
+    "workspace": "工作空间"
+  },
+  "docTreeEmptyText": "您没有创建任何任务",
+  "emptyText": {
+    "allNotebooksHidden": "您设置了任务的隐藏范围：所有笔记本",
+    "currentNotebook": "您设置了任务的隐藏范围：当前笔记本",
+    "currentDoc": "您设置了任务的隐藏范围：当前文档或者文档及其子文档",
+    "dateFilter": "您对任务进行了过滤：当前日期下无任务",
+    "statusFilter": "您对任务进行了过滤：当前状态下无任务",
+    "rangeStatus": "您对任务进行了过滤：当前维度下无任务",
+    "reallyNoTask": "太棒了，所有任务都完成了~"
+  },
+  "setting": {
+    "title": "设置",
+    "cancel": "取消",
+    "confirm": "确认",
+    "taskCountLimit": "任务数量控制",
+    "infoCardConfigDivider": "信息卡片配置",
+    "taskListConfigDivider": "任务列表配置",
+    "docTaskConfigDivider": "文档编辑区域信息展示配置",
+    "hideTaskTreeDesc": "您所勾选的节点，其中的任务会将被隐藏",
+    "onlySelf": "仅自身",
+    "selfAndChildren": "自身及子节点",
+    "singleTaskHiddenDesc": "以下是被隐藏的任务，您可以在这里重新显示它们",
+    "showTask": "显示任务",
+    "noHiddenTask": "没有隐藏的任务",
+    "taskListDisplayLabel": "任务列表的展示方式",
+    "boxDocTask": "笔记本 & 文档 & 任务",
+    "boxTask": "笔记本 & 任务",
+    "onlyTask": "仅任务",
+    "sortItem": {
+      "sortBy": "任务排序方式",
+      "placeholder": "请选择排序方式",
+      "createdAsc": "创建时间升序",
+      "createdDesc": "创建时间降序",
+      "updatedAsc": "更新时间升序",
+      "updatedDesc": "更新时间降序",
+      "finishedAsc": "完成时间升序",
+      "finishedDesc": "完成时间降序"
+    },
+    "infoCardConfig": {
+      "dateTimeDisplayMode": "日期时间展示方式",
+      "dateFormat": "yyyy-mm-dd",
+      "dateTimeFormat": "yyyy-mm-dd hh:mm",
+      "fieldsForHidden": "隐藏所选字段",
+      "fieldsForHiddenPlaceholder": "请选择想要隐藏的字段"
+    },
+    "docTaskConfig": {
+      "isShowExtraInfoOnDocTask": "是否在任务附近显示附加信息"
+    }
+  },
+  "infoCard": {
+    "taskName": "任务名称",
+    "created": "创建时间",
+    "handleAt": "处理时间",
+    "updated": "更新时间",
+    "finished": "完成时间",
+    "box": "笔记本",
+    "docPath": "文档路径"
+  },
+  "filterConfig": {
+    "title": "任务筛选配置",
+    "taskFilterWay": "任务筛选方式",
+    "monthRange": "月视图范围筛选",
+    "dockCalendar": "Dock栏日期筛选",
+    "dockCalendarDisplayMode": "日历显示模式",
+    "dockWeekMode": "周视图",
+    "dockMonthMode": "月视图",
+    "dateRangeFormat": "日期范围筛选形式",
+    "static": "静态日期筛选",
+    "dynamic": "动态日期筛选",
+    "dateRangeValue": "请选择日期范围",
+    "clearBtn": "清空",
+    "dynamicDateRangeList": {
+      "month": "本月",
+      "week": "本周",
+      "pastThreeDays": "过去三天",
+      "futureThreeDays": "未来三天",
+      "today": "今天"
+    }
+  },
+  "dockCalendar": {
+    "todoTaskNumPopover": "待处理 任务数量：",
+    "doneTaskNumPopover": "已完成 任务数量："
+  },
+  "addHandleDate": "添加任务处理时间",
+  "hideSingleTask": "隐藏任务",
+  "hideSelfTask": "隐藏节点自身中的任务",
+  "hideChildTask": "隐藏节点自身及子节点中的任务",
+  "cancel": "取消",
+  "confirm": "确认",
+  "top": "置顶",
+  "aiRoast": {
+    "title": "AI 总结",
+    "authCode": "认证码",
+    "authCodePlaceholder": "点击右侧按钮输入认证码",
+    "getAuthCode": "获取认证码？",
+    "totalTimes": "总次数",
+    "remainingTimes": "剩余次数",
+    "save": "保存",
+    "edit": "编辑",
+    "show": "显示",
+    "hide": "隐藏",
+    "refresh": "刷新",
+    "callMe": "想让我如何称呼您？",
+    "aiGenerate": "AI 生成",
+    "shareAs": "分享为",
+    "img": "图片",
+    "current": "当前",
+    "history": "历史",
+    "close": "关闭",
+    "footer": {
+      "by": "由",
+      "siYuanNote": "思源笔记",
+      "plugin": "插件",
+      "taskList": "任务列表",
+      "generatedByAI": "通过 AI 生成"
+    },
+    "all": "全部",
+    "empty": "暂无数据，请点击 AI 生成 按钮",
+    "content": {
+      "profile": "人物概述"
+    },
+    "toast": {
+      "downloadSuccess": "图片下载成功",
+      "downloadError": "图片下载失败",
+      "fileNamePrefix": "思源插件任务列表 AI",
+      "netWorkError": "网络连接已断开，请检查您的网络设置"
+    }
+  }
+}

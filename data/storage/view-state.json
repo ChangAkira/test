@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "views": {
+    "backlink:pin:20230808120348-orm8sjf": {
+      "updatedAt": 1789552655996,
+      "data": {
+        "anchor:backlink": {
+          "blockID": "",
+          "occurrenceID": "",
+          "offset": 1,
+          "pane": "backlink",
+          "queryKey": "{\"sort\":\"3\",\"mSort\":\"3\",\"k\":\"\",\"mk\":\"\",\"id\":\"20230808120348-orm8sjf\"}",
+          "rootID": "20200812220555-lj3enxa"
+        }
+      },
+      "fieldOrder": [
+        "anchor:backlink"
+      ]
+    }
+  }
+}

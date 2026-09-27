@@ -1,0 +1,32 @@
+{
+  "name": "Zhihu",
+  "author": "terwer",
+  "version": "0.2.0",
+  "url": "https://github.com/terwer/siyuan-theme-zhihu",
+  "displayName": {
+    "default": "Zhihu",
+    "zh_CN": "知乎"
+  },
+  "description": {
+    "default": "Zhihu style, focusing on creating a clean and comfortable creative experience",
+    "zh_CN": "知乎风格，专注于打造干净、舒适的创作体验"
+  },
+  "readme": {
+    "default": "README.md",
+    "zh_CN": "README_zh_CN.md"
+  },
+  "i18n": [
+    "en_US",
+    "zh_CN"
+  ],
+  "funding": {
+    "custom": [
+      "https://afdian.net/a/terwer"
+    ]
+  },
+  "modes": [
+    "light",
+    "dark",
+    "green"
+  ]
+}

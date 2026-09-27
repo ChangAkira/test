@@ -1,0 +1,234 @@
+{
+	"completionTokens": 1847,
+	"contextCachedTokens": 13568,
+	"contextLimit": 1000000,
+	"contextTokenBreakdown": {
+		"mcpTool": 0,
+		"mcpToolsDef": 236,
+		"messages": 826,
+		"nativeTool": 6059,
+		"nativeToolsDef": 6832,
+		"other": 1504,
+		"pluginTool": 0,
+		"pluginToolsDef": 0,
+		"skills": 0,
+		"system": 3049
+	},
+	"contextTokens": 18506,
+	"createdAt": 1789479689952,
+	"entries": [
+		{
+			"blockHTML": "\u003cdiv data-node-id=\"20260915214129-neue115\" data-node-index=\"1\" data-type=\"NodeParagraph\" class=\"p\" updated=\"20260915214344\" data-editing=\"true\"\u003e\u003cdiv contenteditable=\"true\" spellcheck=\"false\"\u003e支持 MCP 工具生态的 AI 客户端\u003c/div\u003e\u003cdiv class=\"protyle-attr\" contenteditable=\"false\"\u003e​\u003c/div\u003e\u003c/div\u003e\u003cdiv data-node-id=\"20260915214354-f1z1ns0\" data-node-index=\"1\" data-type=\"NodeParagraph\" class=\"p\" updated=\"20260915214354\"\u003e\u003cdiv contenteditable=\"true\" spellcheck=\"false\"\u003e\u003c/div\u003e\u003cdiv class=\"protyle-attr\" contenteditable=\"false\"\u003e​\u003c/div\u003e\u003c/div\u003e",
+			"content": "支持 MCP 工具生态的 AI 客户端",
+			"editorContext": {
+				"activeDocID": "20260915211917-u5vdf2v",
+				"activeDocTitle": "1111111",
+				"notebookID": "20260915211915-3vjivq8",
+				"visibleBlockIDs": [
+					"20260915211917-aykgo5d",
+					"20260915214047-i1sc6ld"
+				]
+			},
+			"id": "20260915214355-hgkfr6c",
+			"timestamp": 1789479835956,
+			"type": "user"
+		},
+		{
+			"duration": 5.929,
+			"id": "20260915214356-e2wxwas",
+			"steps": [
+				{
+					"reasoning": "analyzing",
+					"reasoningContent": "The user's message is just \"支持 MCP 工具生态的 AI 客户端\" — a phrase. Maybe they want information? Let me look at the active document to understand context.\n\nLet me fetch the visible blocks.",
+					"roundID": "20260915214355-24k35cj_0",
+					"toolCallIDs": [
+						"call_00_3bzURkiLcBDPi6zO2H856722",
+						"call_01_zXyiOTJJYH3DUA68Zku05984"
+					],
+					"toolNames": [
+						"block",
+						"document"
+					]
+				},
+				{
+					"reasoning": "processing",
+					"reasoningContent": "The document is essentially empty (title \"1111111\", content \"1111111\"). The user says \"支持 MCP 工具生态的 AI 客户端\" — likely they want this added as content? Or they're asking a question? It's ambiguous.\n\nWait — maybe this is a continuation: the user wants a list/note about AI clients that support MCP tool ecosystem. Given the editor context is an empty doc named \"1111111\", maybe they're testing. Hmm.\n\nThe safest: ask a clarifying question. But guidance says use question tool for choices. Here the request is ambiguous: is it a question to answer, or do they want it written into the doc?\n\nAmbiguity is genuine. Let me ask a question with options: 1) 直接回答/介绍, 2) 写入当前文档, 3) 其他.\n\nActually maybe better: just answer with a list of AI clients supporting MCP, and offer to write into the document. But the guidance for choices says use question tool. I think asking is reasonable but could be seen as overly cautious. The message is a noun phrase with no verb — likely the user wants to know which AI clients support MCP.\n\nI could do both: answer concisely and ask if they want it saved. Hmm, but no fabrication — I should verify facts. I know MCP (Model Context Protocol, Anthropic, Nov 2024). Clients supporting MCP: Claude Desktop, Claude Code, Cursor, Windsurf (Codeium), Cline (VS Code extension), Continue, Zed, Replit, Sourcegraph Cody, Goose (Block), JetBrains IDEs (AI Assistant, 2025), VS Code GitHub Copilot (agent mode MCP support), LibreChat, OpenAI ChatGPT desktop (2025), etc.\n\nGiven uncertainty and the instruction not to fabricate, maybe I should search the web to verify. But also the user might just be writing a note. Let me ask quickly — a single question with options. Actually I'll do a hybrid: answer briefly with a verified-ish list, then ask whether to write it into the current document.\n\nHmm, better to ask first, since writing a long answer into an empty doc named \"1111111\" seems odd. I'll ask one question: 是要我介绍/整理成笔记写入当前文档，还是仅口头回答？\n\nI think a concise question is fine. But the tool guidance says use the question tool for choices — so I'll use it.\n\nActually, let me consider: maybe the user wants to add this as a bullet point in their notes? The doc is empty. Just \"1111111\".\n\nI'll ask.",
+					"roundID": "20260915214355-24k35cj_1",
+					"toolCallIDs": [
+						"call_00_4mnLbc24R0NiDrxYR4aO6709"
+					],
+					"toolNames": [
+						"question"
+					]
+				}
+			],
+			"type": "thinking"
+		},
+		{
+			"id": "20260915214401-niern48",
+			"questionID": "20260915214401-oc05uba",
+			"questions": [
+				{
+					"header": "需求确认",
+					"options": [
+						{
+							"description": "联网核实后，把支持 MCP 的 AI 客户端清单整理成 markdown 笔记，写入当前文档",
+							"label": "整理成笔记写入当前文档"
+						},
+						{
+							"description": "只做口头介绍，不写入任何文档",
+							"label": "直接在对话里回答"
+						},
+						{
+							"description": "新建一篇名为「支持 MCP 工具生态的 AI 客户端」的文档并写入内容",
+							"label": "新建独立文档"
+						},
+						{
+							"description": "在工作区中搜索已有的 MCP 相关笔记并汇总",
+							"label": "查找我笔记里的相关内容"
+						}
+					],
+					"question": "你发来的「支持 MCP 工具生态的 AI 客户端」这句，我需要确认想让我做什么？当前文档 [1111111](siyuan://blocks/20260915211917-u5vdf2v) 还是空的。"
+				}
+			],
+			"roundID": "20260915214355-24k35cj_1",
+			"status": "pending",
+			"type": "question"
+		},
+		{
+			"duration": 9.025,
+			"id": "20260915214901-7gb6xds",
+			"steps": [
+				{
+					"reasoning": "processing",
+					"reasoningContent": "No answer. I'll provide a concise answer in chat, and offer to write it into the document. Let me verify with a quick web search to avoid fabricating.\n\nLet me do a web search to confirm current list.",
+					"roundID": "20260915214355-24k35cj_2",
+					"toolCallIDs": [
+						"call_00_zkWI2uBOEJxB8ATBBmjk0733"
+					],
+					"toolNames": [
+						"web_search"
+					]
+				},
+				{
+					"reasoning": "processing",
+					"reasoningContent": "The user question timed out. I should give a concise answer. The phrase is a noun phrase — likely they want a note or an answer. Since no answer, I'll give a brief answer in chat and offer to write into the document.\n\nNote today's date is 2026-09-15. Include mainstream clients: Claude Desktop, Claude Code, Cursor, VS Code GitHub Copilot, Windsurf, Cline, Roo Code, Continue, Zed, JetBrains AI Assistant, OpenAI ChatGPT desktop / Codex? Also SiYuan itself? Actually SiYuan has MCP support (SiYuan MCP server). Let me not fabricate. I'll mention the source table.\n\nKeep it concise with markdown table. Then ask whether to write into the current doc.\n\nAlso I could note SiYuan's built-in MCP — SiYuan has \"MCP\" support in settings (AI). Hmm, that's this very environment (I'm a SiYuan AI assistant with tools). SiYuan does support MCP servers via... Actually SiYuan v3.3+ offers MCP server. I'd better not claim without verification. I could check the user guide notebook quickly? That might be overkill. I'll briefly say \"另外，SiYuan 桌面端也提供 MCP 服务端接入能力\" — risky. Skip it, or verify quickly. Let me skip claiming about SiYuan.\n\nActually it could be valuable — the user is in SiYuan. But don't fabricate. I'll leave out.\n\nGive answer.",
+					"roundID": "20260915214355-24k35cj_3"
+				}
+			],
+			"type": "thinking"
+		},
+		{
+			"id": "runtime_20260915214355-24k35cj_0",
+			"reasoningContent": "The user's message is just \"支持 MCP 工具生态的 AI 客户端\" — a phrase. Maybe they want information? Let me look at the active document to understand context.\n\nLet me fetch the visible blocks.",
+			"roundID": "20260915214355-24k35cj_0",
+			"timestamp": 1789480150954,
+			"toolCalls": [
+				{
+					"arguments": {
+						"action": "batch_get",
+						"ids": "20260915211917-aykgo5d,20260915214047-i1sc6ld"
+					},
+					"argumentsJSON": "{\"action\": \"batch_get\", \"ids\": \"20260915211917-aykgo5d,20260915214047-i1sc6ld\"}",
+					"id": "call_00_3bzURkiLcBDPi6zO2H856722",
+					"name": "block",
+					"result": "[tool_output]\nBatch get 2 blocks (found 2):\n\n- 20260915211917-aykgo5d: 1111111 (rootID: 20260915211917-u5vdf2v, refCount: 0)\n- 20260915214047-i1sc6ld: 1111111 (rootID: 20260915211917-u5vdf2v, refCount: 0)\n\n[/tool_output]",
+					"state": "finished"
+				},
+				{
+					"arguments": {
+						"action": "get",
+						"id": "20260915211917-u5vdf2v"
+					},
+					"argumentsJSON": "{\"action\": \"get\", \"id\": \"20260915211917-u5vdf2v\"}",
+					"id": "call_01_zXyiOTJJYH3DUA68Zku05984",
+					"name": "document",
+					"result": "[tool_output]\nID: 20260915211917-u5vdf2v\nTitle: \nHPath: /1111111\nBox: 20260915211915-3vjivq8\nContent: 1111111\nMarkdown: \nType: NodeDocument\nCreated: 20260915211917\nUpdated: 20260915214047\n[/tool_output]",
+					"state": "finished"
+				}
+			],
+			"type": "assistant"
+		},
+		{
+			"id": "runtime_20260915214355-24k35cj_1",
+			"reasoningContent": "The document is essentially empty (title \"1111111\", content \"1111111\"). The user says \"支持 MCP 工具生态的 AI 客户端\" — likely they want this added as content? Or they're asking a question? It's ambiguous.\n\nWait — maybe this is a continuation: the user wants a list/note about AI clients that support MCP tool ecosystem. Given the editor context is an empty doc named \"1111111\", maybe they're testing. Hmm.\n\nThe safest: ask a clarifying question. But guidance says use question tool for choices. Here the request is ambiguous: is it a question to answer, or do they want it written into the doc?\n\nAmbiguity is genuine. Let me ask a question with options: 1) 直接回答/介绍, 2) 写入当前文档, 3) 其他.\n\nActually maybe better: just answer with a list of AI clients supporting MCP, and offer to write into the document. But the guidance for choices says use question tool. I think asking is reasonable but could be seen as overly cautious. The message is a noun phrase with no verb — likely the user wants to know which AI clients support MCP.\n\nI could do both: answer concisely and ask if they want it saved. Hmm, but no fabrication — I should verify facts. I know MCP (Model Context Protocol, Anthropic, Nov 2024). Clients supporting MCP: Claude Desktop, Claude Code, Cursor, Windsurf (Codeium), Cline (VS Code extension), Continue, Zed, Replit, Sourcegraph Cody, Goose (Block), JetBrains IDEs (AI Assistant, 2025), VS Code GitHub Copilot (agent mode MCP support), LibreChat, OpenAI ChatGPT desktop (2025), etc.\n\nGiven uncertainty and the instruction not to fabricate, maybe I should search the web to verify. But also the user might just be writing a note. Let me ask quickly — a single question with options. Actually I'll do a hybrid: answer briefly with a verified-ish list, then ask whether to write it into the current document.\n\nHmm, better to ask first, since writing a long answer into an empty doc named \"1111111\" seems odd. I'll ask one question: 是要我介绍/整理成笔记写入当前文档，还是仅口头回答？\n\nI think a concise question is fine. But the tool guidance says use the question tool for choices — so I'll use it.\n\nActually, let me consider: maybe the user wants to add this as a bullet point in their notes? The doc is empty. Just \"1111111\".\n\nI'll ask.",
+			"roundID": "20260915214355-24k35cj_1",
+			"timestamp": 1789480150954,
+			"toolCalls": [
+				{
+					"arguments": {
+						"questions": [
+							{
+								"header": "需求确认",
+								"options": [
+									{
+										"description": "联网核实后，把支持 MCP 的 AI 客户端清单整理成 markdown 笔记，写入当前文档",
+										"label": "整理成笔记写入当前文档"
+									},
+									{
+										"description": "只做口头介绍，不写入任何文档",
+										"label": "直接在对话里回答"
+									},
+									{
+										"description": "新建一篇名为「支持 MCP 工具生态的 AI 客户端」的文档并写入内容",
+										"label": "新建独立文档"
+									},
+									{
+										"description": "在工作区中搜索已有的 MCP 相关笔记并汇总",
+										"label": "查找我笔记里的相关内容"
+									}
+								],
+								"question": "你发来的「支持 MCP 工具生态的 AI 客户端」这句，我需要确认想让我做什么？当前文档 [1111111](siyuan://blocks/20260915211917-u5vdf2v) 还是空的。"
+							}
+						]
+					},
+					"argumentsJSON": "{\"questions\": [{\"header\": \"需求确认\", \"question\": \"你发来的「支持 MCP 工具生态的 AI 客户端」这句，我需要确认想让我做什么？当前文档 [1111111](siyuan://blocks/20260915211917-u5vdf2v) 还是空的。\", \"options\": [{\"label\": \"整理成笔记写入当前文档\", \"description\": \"联网核实后，把支持 MCP 的 AI 客户端清单整理成 markdown 笔记，写入当前文档\"}, {\"label\": \"直接在对话里回答\", \"description\": \"只做口头介绍，不写入任何文档\"}, {\"label\": \"新建独立文档\", \"description\": \"新建一篇名为「支持 MCP 工具生态的 AI 客户端」的文档并写入内容\"}, {\"label\": \"查找我笔记里的相关内容\", \"description\": \"在工作区中搜索已有的 MCP 相关笔记并汇总\"}]}]}",
+					"id": "call_00_4mnLbc24R0NiDrxYR4aO6709",
+					"name": "question",
+					"result": "[tool_output]\nNo answer received (timed out).\n[/tool_output]",
+					"state": "finished"
+				}
+			],
+			"type": "assistant"
+		},
+		{
+			"id": "runtime_20260915214355-24k35cj_2",
+			"reasoningContent": "No answer. I'll provide a concise answer in chat, and offer to write it into the document. Let me verify with a quick web search to avoid fabricating.\n\nLet me do a web search to confirm current list.",
+			"roundID": "20260915214355-24k35cj_2",
+			"timestamp": 1789480150954,
+			"toolCalls": [
+				{
+					"arguments": {
+						"query": "MCP clients list Claude Desktop Cursor Windsurf Zed VS Code Copilot 支持 Model Context Protocol 客户端"
+					},
+					"argumentsJSON": "{\"query\": \"MCP clients list Claude Desktop Cursor Windsurf Zed VS Code Copilot 支持 Model Context Protocol 客户端\"}",
+					"id": "call_00_zkWI2uBOEJxB8ATBBmjk0733",
+					"name": "web_search",
+					"result": "[tool_output]\nTitle: 客户端 – Model Context Protocol （MCP）\nURL: https://modelcontextprotocol.info/zh-cn/docs/clients/\nPublished: N/A\nAuthor: N/A\nHighlights:\n本页面概述了支持模型上下文协议（Model Context Protocol，MCP）的应用程序。每个客户端可能支持不同的 MCP 功能，从而实现与 MCP 服务器不同程度的集成。\n...\n| 客户端 | 资源 | 提示 | 工具 | 采样 | 根目录 | 备注 |\n| --- | --- | --- | --- | --- | --- | --- |\n| 5ire | ❌ | ❌ | ✅ | ❌ | ❌ | 支持工具 |\n| BeeAI Framework | ❌ | ❌ | ✅ | ❌ | ❌ | 在智能工作流中支持工具 |\n| Claude 桌面应用 | ✅ | ✅ | ✅ | ❌ | ✅ | 完整支持所有 MCP 功能，包括根目录 |\n| Claude Code | ✅ | ✅ | ✅ | ❌ | ✅ | Claude Code编程助手，支持根目录功能 |\n| Cline | ✅ | ❌ | ✅ | ❌ | ❌ | 支持工具和资源 |\n| Continue | ✅ | ✅ | ✅ | ❌ | ❌ | 完整支持所有 MCP 功能 |\n| Copilot-MCP | ❌ | ❌ | ✅ | ❌ | ❌ | GitHub Copilot MCP集成 |\n| Cursor | ❌ | ❌ | ✅ | ❌ | ❌ | 支持工具 |\n| Emacs Mcp | ❌ | ❌ | ✅ | ❌ | ❌ | 在 Emacs 中支持工具 |\n| Fast-Agent | ❌ | ❌ | ✅ | ❌ | ❌ | 快速智能体，支持工具集成 |\n...\n⚠️ |\n...\n列表和查找 |\n...\n| GenAIScript |\n...\n| ❌ | ✅ |\n...\n| 支持工具 |\n...\n| ✅ |\n...\n| OpenSumi | ❌ |\n...\n❌ |\n...\n中支持工具 |\n...\n| Roo Code | ✅ | ❌ | ✅ | ❌ | ❌ | 支持工具和资源 |\n| Sourcegraph Cody | ✅ | ❌ | ❌ | ❌ | ❌ | 通过 OpenCTX 支持资源 |\n| Superinterface | ❌ | ❌ | ✅ | ❌ | ❌ | 支持工具 |\n| TheiaAI/TheiaIDE | ❌ | ❌ | ✅ | ❌ | ❌ | 在 Theia AI 和 IDE 中支持 Agent 的工具 |\n| VS Code MCP | ✅ | ❌ | ✅ | ❌ | ❌ | VS Code扩展，支持MCP工具和资源集成 |\n| Windsurf Editor | ❌ | ❌ | ✅ | ❌ | ❌ | 支持 AI Flow 的工具 |\n| Zed | ❌ | ✅ | ❌ | ❌ | ❌ | 提示以斜杠命令形式出现 |\n...\n### Claude 桌面应用\n...\nClaude 桌面应用程序提供全面的 MCP 支持，实现与本地工具和数据源的深度集成。\n...\nⓘ 注意：Claude.ai 网页应用目前不支持 MCP。MCP 功能仅在桌面应用程序中可用。\n...\nZed是一个内置 MCP 支持的高性能代码编辑器，专注于提示模板和工具集成。\n...\n- 提示模板以斜杠命令形式出现在编辑器中\n- 工具集成以增强编码工作流程\n- 与编辑器功能和工作区上下文紧密集成\n- 不支持 MCP 资源\n\n---\n\nTitle: clients.mdx at main · modelcontextprotocol/docs\nURL: https://github.com/modelcontextprotocol/docs/blob/main/clients.mdx\nPublished: N/A\nAuthor: N/A\nHighlights:\nThis page provides an overview of applications that support the Model Context Protocol (MCP). Each client may support different MCP features, allowing for varying levels of integration with MCP servers.\n...\n| Client | [Resources] | [Prompts] | [Tools] | [Sampling] | Roots | Notes |\n|---------------------------------------------|-------------|-----------|---------|------------|--------|-----------------------------------------------------------------------------|\n| [Claude Desktop App][Claude] | ✅ | ✅ | ✅ | ❌ | ❌ | Full support for all MCP features |\n...\n| [Claude Code][Claude Code] | ❌ | ✅ | ✅ | ❌ | ✅ | Supports prompts, tools, and roots |\n...\n[Continue][Continue\n...\n| [Copilot-MCP][CopilotMCP] | ✅ | ❌ | ✅ | ❌ | ❌ | Supports tools and resources. |\n...\n| [Cursor][Cursor] | ❌ | ❌ | ✅ | ❌ | ❌ | Supports tools. |\n...\n| [Microsoft Copilot Studio] | ❌ | ❌ | ✅ | ❌ | ❌ | Supports tools |\n...\n| [VS Code GitHub Copilot][VS Code] | ❌ | ❌ | ✅ | ❌ | ❌ | Supports tools, roots, dynamic discovery, secure secret configuration, and one-click installation |\n...\n| [Windsurf Editor][Windsurf] | ❌ | ❌ | ✅ | ❌ | ❌ | Supports tools with AI Flow for collaborative development. |\n...\n| [Zed][Zed] | ❌ | ✅ | ❌ | ❌ | ❌ | Prompts appear as slash commands |\n...\n### Claude Desktop App\n...\n### Claude Code\n...\n[Cursor](https://docs.cursor.com/advanced/model-context-protocol) is an AI code editor.\n...\n**Key Features**:\n...\n- Support for MCP tools in Cursor Composer\n- Support for both STDIO and SSE\n...\n### Microsoft Copilot Studio\n...\n### VS Code GitHub Copilot\n...\n[VS Code](https://code.visualstudio.com/) integrates MCP with GitHub Copilot through [agent mode](https://code.visualstudio.com/docs/copilot/chat/chat-agent-mode), allowing direct interaction with MCP-provided tools within your agentic coding workflow. Configure servers in Claude Desktop, workspace or user settings, with guided MCP installation and secure handling of keys in input variables to avoid leaking hard-coded keys.\n...\nKey features:**\n...\n### Windsurf Editor\n...\n[Zed](https://zed.dev/docs/assistant/model-context-protocol) is a high-performance code editor with built-in MCP support, focusing on prompt templates and tool integration.\n...\n**Key features:**\n...\n- Prompt templates surface as slash commands in the editor\n- Tool integration for enhanced coding workflows\n- Tight integration with editor features and workspace context\n- Does not support MCP resources\n\n---\n\nTitle: Clients – Model Context Protocol （MCP）\nURL: https://modelcontextprotocol.info/docs/clients/\nPublished: N/A\nAuthor: N/A\nHighlights:\nThis page provides an overview of applications that support the Model Context Protocol (MCP). Each client may support different MCP features, allowing for varying levels of integration with MCP servers.\n...\n| Client | Resources | Prompts | Tools | Sampling | Roots | Notes |\n| --- | --- | --- | --- | --- | --- | --- |\n| 5ire | ❌ | ❌ | ✅ | ❌ | ❌ | Supports tools |\n| BeeAI Framework | ❌ | ❌ | ✅ | ❌ | ❌ | Supports tools in agentic workflows |\n| Claude Desktop App | ✅ | ✅ | ✅ | ❌ | ✅ | Full support for all MCP features, including roots |\n| Claude Code | ✅ | ✅ | ✅ | ❌ | ✅ | Claude Code programming assistant with roots support |\n| Cline | ✅ | ❌ | ✅ | ❌ | ❌ | Supports tools and resources |\n| Continue | ✅ | ✅ | ✅ | ❌ | ❌ | Full support for all MCP features |\n...\n| Copilot-MCP | ❌ | ❌ | ✅ | ❌ | ❌ | GitHub Copilot MCP integration |\n...\n| Cursor | ❌ | ❌ | ✅ | ❌ | ❌ | Supports tools |\n...\n| VS Code MCP | ✅ | ❌ | ✅ | ❌ | ❌ | VS Code extension supporting MCP tools and resources |\n| Windsurf Editor | ❌ | ❌ | ✅ | ❌ | ❌ | Supports tools with AI Flow |\n| Zed | ❌ | ✅ | ❌ | ❌ | ❌ | Prompts appear as slash commands |\n...\n### Claude Desktop App\n...\nThe Claude desktop application provides comprehensive support for MCP, enabling deep integration with local tools and data sources.\n...\n### Zed\n...\nZed is a high-performance code editor with built-in MCP support, focusing on prompt templates and tool integration.\n...\n- Prompt templates surface as slash commands in the editor\n- Tool integration for enhanced coding workflows\n- Tight integration with editor features and workspace context\n- Does not support MCP resources\n\n---\n\nTitle: tadata-org/mcp-client-compatibility\nURL: https://github.com/tadata-org/mcp-client-compatibility/\nPublished: N/A\nAuthor: N/A\nHighlights:\nThis repository tracks which MCP (Model Context Protocol) clients support which parts of the protocol.\n...\n| Client | Docs | Tools | Prompts | Resources | STDIO | SSE | HTTP | OAuth | Pass-through | Notes |\n|--------|------|-------|---------|-----------|-------|-----|------|-------|-------------|--------|\n...\n| [Claude.ai (Web)](https://claude.ai) | [Docs](https://support.anthropic.com/en/articles/11175166-about-custom-integrations-using-remote-mcp) | ✅ | ❔ | ❔ | ❌ | ✅ | ✅ | ✅ | ✅ | |\n...\n| [Claude Desktop Remote MCP via Integrations](https://claude.ai/download) | [Docs](https://support.anthropic.com/en/articles/11503834-building-custom-integrations-via-remote-mcp-servers) | ✅ | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ | ✅ | Only available on Pro, Max, Teams, and Enterprise tiers. Configure via Settings \u003e Integrations. |\n...\n| [Claude Desktop Local MCP via Config](https://claude.ai/download) | [Docs](https://modelcontextprotocol.io/quickstart/user) | ✅ | ✅ | ✅ | ✅ | ⚠️ | ⚠️ | ❌ | ❔ | SSE/HTTP via proxy only. Configure via Claude Settings \u003e Developer \u003e edit claude_desktop_config.json config. Claude Desktop won't connect to remote servers configured via claude_desktop_config.json. |\n...\n| Client | Docs | Tools | Prompts | Resources | STDIO | SSE | HTTP | OAuth | Pass-through | Notes |\n|--------|------|-------|---------|-----------|-------|-----|------|-------|-------------|--------|\n| [Cursor](https://cursor.sh) | [Docs](https://docs.cursor.com/context/model-context-protocol) | ✅ | ❔ | ❌ | ✅ | ✅ | ✅ | ✅ | ❔ | |\n...\n| [Windsurf](https://codeium.com/windsurf) | [Docs](https://docs.windsurf.com/windsurf/cascade/mcp#model-context-protocol-mcp) | ✅ | ❌ | ✅ | ✅ | ✅ | ❌ | ❔ | ❔ | |\n...\n| [VS Code GitHub Copilot](https://github.com/features/copilot) | [Docs](https://docs.github.com/en/copilot/customizing-copilot/using-model-context-protocol/extending-copilot-chat-with-mcp) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❔ | ❔ | Supports sampling |\n...\n| [Claude Code](https://claude.ai/code) | [Docs](https://docs.anthropic.com/en/docs/claude-code/mcp) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ❔ | ❔ | |\n\n---\n\nTitle: 示例客户端 - 模型上下文协议\nURL: https://docs.cnmcp.com/clients.zh\nPublished: N/A\nAuthor: N/A\nHighlights:\n本页面概述了支持模型上下文协议(MCP)的应用程序。每个客户端可能支持不同的 MCP 功能，允许与 MCP 服务器进行不同程度的集成。\n...\n| 客户端 | [资源] | [提示] | [工具] | [采样] | 根目录 | 备注 |\n| --- | --- | --- | --- | --- | --- | --- |\n| Claude Desktop App | ✅ | ✅ | ✅ | ❌ | ❌ | 支持所有 MCP 功能 |\n| 5ire | ❌ | ❌ | ✅ | ❌ | ❌ | 支持工具。 |\n| BeeAI Framework | ❌ | ❌ | ✅ | ❌ | ❌ | 支持代理工作流中的工具。 |\n| Cline | ✅ | ❌ | ✅ | ❌ | ❌ | 支持工具和资源。 |\n| Continue | ✅ | ✅ | ✅ | ❌ | ❌ | 支持所有 MCP 功能 |\n| Cursor | ❌ | ❌ | ✅ | ❌ | ❌ | 支持工具。 |\n| Emacs Mcp | ❌ | ❌ | ✅ | ❌ | ❌ | 支持 Emacs 中的工具。 |\n| Firebase Genkit | ⚠️ | ✅ | ✅ | ❌ | ❌ | 通过工具支持资源列表和查找。 |\n| GenAIScript | ❌ | ❌ | ✅ | ❌ | ❌ | 支持工具。 |\n| Goose | ❌ | ❌ | ✅ | ❌ | ❌ | 支持工具。 |\n| LibreChat | ❌ | ❌ | ✅ | ❌ | ❌ | 支持代理工具 |\n| mcp-agent | ❌ | ❌ | ✅ | ⚠️ | ❌ | 支持工具、服务器连接管理和代理工作流。 |\n| Roo Code | ✅ | ❌ | ✅ | ❌ | ❌ | 支持工具和资源。 |\n| Sourcegraph Cody | ✅ | ❌ | ❌ | ❌ | ❌ | 通过 OpenCTX 支持资源 |\n| Superinterface | ❌ | ❌ | ✅ | ❌ | ❌ | 支持工具 |\n| TheiaAI/TheiaIDE | ❌ | ❌ | ✅ | ❌ | ❌ | 支持 Theia AI 和 AI 驱动的 Theia IDE 中的代理工具 |\n| Windsurf Editor | ❌ | ❌ | ✅ | ❌ | ❌ | 支持带有 AI Flow 的协作开发工具。 |\n| Zed | ❌ | ✅ | ❌ | ❌ | ❌ | 提示作为斜杠命令出现 |\n| [OpenSumi][OpenSumi] | ❌ | ❌ | ✅ | ❌ | ❌ | 支持 OpenSumi 中的工具 |\n...\n## 客户端详情\n...\n### Claude Desktop App\n...\nClaude 桌面应用程序提供全面的 MCP 支持，实现与本地工具和数据源的深度集成。\n...\n\u003e ⓘ 注意：Claude.ai 网页应用程序目前不支持 MCP。MCP 功能仅在桌面应用程序中可用。\n...\nCline 是 VS Code 中的自主编码代理，可以编辑文件、运行命令、使用浏览器等，每一步都需要您的许可。\n...\nCursor 是一个 AI 代码编辑器。\n...\n- 在 Cursor Composer 中支持 MCP 工具\n- 支持 STDIO 和 SSE\n...\n### Windsurf Editor\n...\nWindsurf Editor 是一个将 AI 辅助与开发者工作流相结合的代理 IDE。它具有创新的 AI Flow 系统，支持协作和独立的 AI\n...\n交互，同时保持开发者控制。\n...\nZed 是一个内置 MCP 支持的高性能代码编辑器，专注于提示模板和工具集成。\n...\n- 提示模板作为编辑器中的斜杠命令显示\n- 工具集成以增强编码工作流\n- 与编辑器功能和工作区上下文紧密集成\n- 不支持 MCP 资源\n\n---\n\nTitle: MCP客户端示例 | model context protocol客户端列表 | McpDoc\nURL: https://mcpdoc.club/get-started/Example-Clients.html\nPublished: N/A\nAuthor: N/A\nHighlights:\n本页概述了支持model context protocol(MCP)的应用程序。每个客户端可能支持不同的MCP功能，允许与MCP服务器进行不同程度的集成。\n...\n### Claude桌面应用 ​\n...\nClaude桌面应用程序提供全面的MCP支持，实现与本地工具和数据源的深度集成。\n...\n服务器连接以增强隐私\n...\n- 用于执行命令和\n...\n的工具集成\n...\n- 支持提示模板\n...\n支持资源，允许附加本地文件和数据\n...\nⓘ 注意：Claude.ai网页应用目前不支持MCP。MCP功能仅在桌面应用程序中可用。\n...\n## Cline ​\n...\nCline是VS Code中的一个自主编码代理，可以编辑文件、运行命令、使用浏览器等——每一步都需要您的许可。\n...\n## Cursor ​\n...\nCursor是一个AI代码编辑器。\n...\n- 支持STDIO和SSE\n- 在Cursor Composer中支持MCP工具\n...\n## Windsurf Editor ​\n...\nWindsurf Editor是一个代理式IDE，将AI辅助与开发者工作流相结合。它具有创新的AI Flow系统，在保持开发者控制的同时实现协作和独立的AI交互。\n...\n## Zed ​\n...\nZed是一个内置MCP支持的高性能代码编辑器，专注于提示模板和工具集成。\n...\n- 不支持MCP资源\n- 与编辑器功能和工作区上下文的紧密集成\n- 用于增强编码工作流的工具集成\n- 提示模板以编辑器中的斜杠命令形式呈现\n\n---\n\nTitle: MCP Clients: Complete List of Apps That Support Model Context Protocol\nURL: https://readfa.com/blog/mcp-clients/\nPublished: 2026-06-19T00:00:00.000Z\nAuthor: N/A\nHighlights:\n#### Claude Desktop (Anthropic)\n...\nThe reference implementation of an MCP client. Claude Desktop was the first app to ship MCP support and remains the most widely used.\n...\nAI-powered code editor with built-in MCP support. Cursor was one of the first IDEs to integrate MCP, allowing AI agents to interact with external tools during coding sessions.\n...\nmacOS, Windows,\n...\n- Features:\n...\n- Config:\n...\n#### VS Code (with GitHub Copilot)\n...\nVisual Studio Code supports MCP through GitHub Copilot Chat’s agent mode. This brings MCP tools to the most popular code editor in the world.\n...\n- Platforms: macOS, Windows, Linux\n- Transport: stdio\n- Features: Tools (via\n...\nilot Chat agent mode)\n- Config:`.vscode/mcp.json` or workspace settings\n- Setup guide: MCP Server for VS Code\n...\n#### Windsurf (Codeium)\n...\nAI-native IDE from Codeium with deep MCP integration. Windsurf treats MCP servers as first-class citizens in its Cascade AI workflow.\n...\nTools, resources\n...\n- Config:\n...\n- Setup guide:\n...\n| Client | Tools | Resources | Prompts | Sampling | SSE | stdio |\n| --- | --- | --- | --- | --- | --- | --- |\n| Claude Desktop | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ |\n| Cursor | ✅ | ❌ | ❌ | ❌ | ❌ | ✅ |\n| VS Code (Copilot) | ✅ | ❌ | ❌ | ❌ | ❌ | ✅ |\n| Windsurf | ✅ | ✅ | ❌ | ❌ | ❌ | ✅ |\n| Claude Code | ✅ | ❌ | ❌ | ❌ | ❌ | ✅ |\n| Continue.dev | ✅ | ❌ | ❌ | ❌ | ❌ | ✅ |\n| Zed | ✅ | ❌ | ❌ | ❌ | ❌ | ✅ |\n| Cline | ✅ | ❌ | ❌ | ❌ | ❌ | ✅ |\n...\nKey takeaway: Claude Desktop has the most complete MCP support. Most other clients support only tools (the most commonly used MCP primitive). If you’re building a server, prioritize tool support first.\n...\nUse Cursor or VS Code with Copilot. Both integrate MCP tools into their AI coding workflows. If you use JetBrains IDEs, try Continue.dev.\n...\nUse Claude Desktop or Windsurf. These are the only clients that support resources in addition to tools, giving you access to the full MCP feature set.\n\n---\n\nTitle: N/A\nURL: https://docs.cnmcp.com/clients\nPublished: N/A\nAuthor: N/A\nHighlights:\nThis page provides an overview of applications that support the Model Context Protocol (MCP). Each client may support different MCP features, allowing for varying levels of integration with MCP servers.\n...\n| Client | Resources | Prompts | Tools | Sampling | Roots | Notes |\n| --- | --- | --- | --- | --- | --- | --- |\n| Claude Desktop App | ✅ | ✅ | ✅ | ❌ | ❌ | Full support for all MCP features |\n| 5ire | ❌ | ❌ | ✅ | ❌ | ❌ | Supports tools. |\n| BeeAI Framework | ❌ | ❌ | ✅ | ❌ | ❌ | Supports tools in agentic workflows. |\n| Cline | ✅ | ❌ | ✅ | ❌ | ❌ | Supports tools and resources. |\n| Continue | ✅ | ✅ | ✅ | ❌ | ❌ | Full support for all MCP features |\n| Cursor | ❌ | ❌ | ✅ | ❌ | ❌ | Supports tools. |\n...\n| Emacs Mcp | ❌ | ❌ | ✅ | ❌ | ❌ | Supports tools in Emacs. |\n...\n| Windsurf Editor | ❌ | ❌ | ✅ | ❌ | ❌ | Supports tools with AI Flow for collaborative development. |\n...\n| Zed | ❌ | ✅ | ❌ | ❌ | ❌ | Prompts appear as slash commands |\n...\n### Claude Desktop App\n...\nThe Claude desktop application provides comprehensive support for MCP, enabling deep integration with local tools and data sources.\n...\n\u003e ⓘ Note: The Claude.ai web application does not currently support MCP. MCP features are only available in the desktop application.\n...\nCline is an autonomous coding\n...\nthat edits files, runs commands, uses a browser, and more–with your permission at each step.\n...\nCursor is an AI code editor.\n...\n- Support for MCP tools in Cursor Composer\n- Support for both STDIO and SSE\n...\n### Windsurf Editor\n...\nEditor is an agentic IDE that combines AI assistance with developer workflows. It features an innovative AI Flow system that enables both collaborative and independent AI interactions while maintaining developer control.\n...\nZed is a high-performance code editor with built-in MCP support, focusing on prompt templates and tool integration.\n...\n- Prompt templates surface as slash commands in the editor\n- Tool integration for enhanced coding workflows\n- Tight integration with editor features and workspace context\n- Does not support MCP resources\n[/tool_output]",
+					"state": "finished"
+				}
+			],
+			"type": "assistant"
+		},
+		{
+			"content": "当前文档 [1111111](siyuan://blocks/20260915211917-u5vdf2v) 还是空的，刚才的确认没收到回复，先直接回答（如需写入文档告诉我）。\n\nMCP（Model Context Protocol）生态里，主流「客户端」及其支持的功能大致如下（来源：官方 Clients 文档与社区兼容性表）：\n\n| 客户端 | 类型 | Tools | Resources | Prompts | 备注 |\n|---|---|---|---|---|---|\n| Claude Desktop | 桌面应用 | ✅ | ✅ | ✅ | 支持最完整（含 Roots） |\n| Claude Code | 终端编程助手 | ✅ | ✅ | ✅ | 支持 Roots |\n| VS Code + GitHub Copilot | IDE | ✅ | ✅ | ✅ | 通过 agent mode，支持一键安装、密钥变量 |\n| Cursor | AI 编辑器 | ✅ | ❌ | ❌ | 支持 stdio 与 SSE |\n| Windsurf | AI IDE | ✅ | ✅ | ❌ | Cascade/AI Flow 集成 |\n| Cline / Roo Code | VS Code 插件 | ✅ | ✅ | ❌ | 自主编码代理 |\n| Continue | 插件/CI | ✅ | ✅ | ✅ | 支持 JetBrains、VS Code |\n| Zed | 编辑器 | ❌ | ❌ | ✅ | Prompts 以斜杠命令形式出现 |\n| ChatGPT 桌面版 / Copilot Studio | 桌面 / 平台 | ✅ | — | — | 以 Tools 为主 |\n| LibreChat、5ire、Goose、mcp-agent 等 | 类 ChatGPT 前端 / 框架 | ✅ | ❌ | ❌ | 多只支持工具 |\n\n几个要点：\n- **Tools 是事实标准**：几乎所有客户端都支持，只做 MCP Server 的话优先实现 Tools。\n- **Resources/Prompts 覆盖度低**，只有 Claude Desktop、Continue、VS Code Copilot 等少数客户端全支持。\n- **Claude.ai 网页版不支持 MCP**，只有桌面版可用；远程 MCP 的 Integrations 功能需 Pro/Max/Team/Enterprise 套餐。\n\n需要我把它整理成一篇笔记（写入当前文档，或新建独立文档）吗？",
+			"id": "runtime_20260915214355-24k35cj_3",
+			"reasoningContent": "The user question timed out. I should give a concise answer. The phrase is a noun phrase — likely they want a note or an answer. Since no answer, I'll give a brief answer in chat and offer to write into the document.\n\nNote today's date is 2026-09-15. Include mainstream clients: Claude Desktop, Claude Code, Cursor, VS Code GitHub Copilot, Windsurf, Cline, Roo Code, Continue, Zed, JetBrains AI Assistant, OpenAI ChatGPT desktop / Codex? Also SiYuan itself? Actually SiYuan has MCP support (SiYuan MCP server). Let me not fabricate. I'll mention the source table.\n\nKeep it concise with markdown table. Then ask whether to write into the current doc.\n\nAlso I could note SiYuan's built-in MCP — SiYuan has \"MCP\" support in settings (AI). Hmm, that's this very environment (I'm a SiYuan AI assistant with tools). SiYuan does support MCP servers via... Actually SiYuan v3.3+ offers MCP server. I'd better not claim without verification. I could check the user guide notebook quickly? That might be overkill. I'll briefly say \"另外，SiYuan 桌面端也提供 MCP 服务端接入能力\" — risky. Skip it, or verify quickly. Let me skip claiming about SiYuan.\n\nActually it could be valuable — the user is in SiYuan. But don't fabricate. I'll leave out.\n\nGive answer.",
+			"roundID": "20260915214355-24k35cj_3",
+			"timestamp": 1789480150954,
+			"type": "assistant"
+		}
+	],
+	"id": "20260915214129-e6fru0b",
+	"lastCommittedTurnID": "20260915214355-24k35cj",
+	"messageHistory": [
+		"支持 MCP 工具生态的 AI 客户端"
+	],
+	"model": "20260915203651-6w8dx4p",
+	"permissionMode": "confirm",
+	"promptTokens": 56963,
+	"revision": 2,
+	"title": "支持 MCP 工具生态的 AI 客户端",
+	"titled": true,
+	"updatedAt": 1789480150995
+}

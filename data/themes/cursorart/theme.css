@@ -1,0 +1,850 @@
+/*
+ * cursor极简 — 叠在官方默认主题之上的布局主题
+ *
+ * 亮色：daylight → 本文件；暗色：midnight → 本文件
+ * 配色 / 字体 / 组件变量一律复用下层官方主题，本文件只改分区布局。
+ *
+ * 分区模型：
+ *   ┌──────────────── 1 顶栏 ────────────────┐
+ *   ├──────────┬───────────────┬─────────────┤
+ *   │ 2 左侧栏 │  3 中间编辑区  │  4 右侧栏   │
+ *   └──────────┴───────────────┴─────────────┘
+ *
+ * 开发：改完后 Network 勾 Disable cache，控制台 location.reload()
+ * 左/右 dock 横条在对应侧栏顶部（.layout__dockl / .layout__dockr 内），依赖配套插件
+ */
+
+:root {
+    /*
+     * 标题栏目标：截图约 55 设备像素。
+     * CSS 像素 = 55 / devicePixelRatio；用 resolution / -webkit-device-pixel-ratio 分档。
+     */
+    --starter-topbar-height: 55px;
+
+    /* 取消圆角卡片托盘：间隙归零；底色跟面板；关掉左上角高光 */
+    --b3-layout-space: 0px;
+    --b3-layout-space-margin: 0px;
+    --b3-body-background: var(--b3-theme-background);
+    --b3-body-background-hl-opacity: 0;
+}
+
+/* 常见系统缩放：100% / 125% / 150% / 175% / 200% / 250% / 300% */
+@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx) {
+    :root {
+        --starter-topbar-height: calc(55px / 1.25);
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+    :root {
+        --starter-topbar-height: calc(55px / 1.5);
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.75), (min-resolution: 1.75dppx) {
+    :root {
+        --starter-topbar-height: calc(55px / 1.75);
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    :root {
+        --starter-topbar-height: calc(55px / 2);
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 2.5dppx) {
+    :root {
+        --starter-topbar-height: calc(55px / 2.5);
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 3dppx) {
+    :root {
+        --starter-topbar-height: calc(55px / 3);
+    }
+}
+
+/* 亮色 / 暗色底：统一面板与窗体背景 */
+:root[data-theme-mode="light"] {
+    --b3-theme-background: #f8f8f8;
+    --b3-body-background: #f8f8f8;
+}
+
+:root[data-theme-mode="dark"] {
+    --b3-theme-background: #202020;
+    --b3-body-background: #202020;
+}
+
+/* 取消官方 body 径向渐变，底色跟当前模式的 --b3-theme-background */
+body {
+    background-color: var(--b3-theme-background);
+    background-image: none;
+}
+
+/* =========================================================
+ * ① 顶栏
+ * 隐藏顶栏时勿给 #toolbar 设 z-index，否则挡住文档 Tab。
+ * 横线全宽；竖线从横线起向下（不贯穿 Tab 区）。
+ * 高度一律 --starter-topbar-height（默认 55 设备像素 / dpr）。
+ * 关闭「自适应标题栏高度」时插件给 html 加 starter-default-topbar，改成官方约 42px。
+ * ========================================================= */
+
+html.starter-default-topbar {
+    --starter-topbar-height: 42px;
+}
+
+body.body--toolbar-hide #toolbar.toolbar {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    height: var(--starter-topbar-height);
+    min-height: var(--starter-topbar-height);
+    max-height: var(--starter-topbar-height);
+    line-height: var(--starter-topbar-height);
+    position: absolute;
+    z-index: auto;
+    border-bottom: none;
+    overflow: hidden;
+}
+
+body.body--toolbar-hide #toolbar {
+    pointer-events: none;
+}
+
+body.body--toolbar-hide #toolbar > :not(#drag) {
+    pointer-events: auto;
+}
+
+body.body--toolbar-hide #toolbar #drag {
+    height: var(--starter-topbar-height);
+    pointer-events: none;
+}
+
+body.body--toolbar-hide #toolbar #drag::before,
+body.body--toolbar-hide #toolbar #drag::after {
+    height: var(--starter-topbar-height);
+    pointer-events: auto;
+}
+
+/* 普通工具：保持官方小按钮，在标题栏行里垂直居中，不跟 Tab 抢满高 */
+body.body--toolbar-hide #toolbar > .toolbar__item:not(.toolbar__item--win):not(.toolbar__item--close) {
+    align-self: center;
+}
+
+/* 窗口最小/最大/关闭：铺满标题栏高度，用 flex 居中图标（避免固定 padding 在缩放后偏位） */
+body.body--toolbar-hide #toolbar #windowControls {
+    height: var(--starter-topbar-height);
+    align-self: stretch;
+    display: flex;
+    align-items: stretch;
+}
+
+body.body--toolbar-hide .toolbar__item--win,
+body.body--toolbar-hide .toolbar__item--close,
+body.body--window .toolbar__window .toolbar__item {
+    box-sizing: border-box;
+    height: var(--starter-topbar-height) !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    align-self: stretch;
+}
+
+body.body--toolbar-hide .layout-tab-bar .item {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* VS Code 式文档 Tab：直角贴条、激活纸色、未激活 chrome、竖线分隔。
+ * 底部分割线画在 Tab 条背景上；激活项铺满纸色盖住那 1px，并抬到 body::after 之上。 */
+#layouts .layout__center .layout-tab-bar {
+    position: relative;
+    z-index: 11;
+    box-sizing: border-box;
+    height: var(--starter-topbar-height);
+    min-height: var(--starter-topbar-height);
+    max-height: var(--starter-topbar-height);
+    background-color: var(--b3-theme-background);
+    background-image: linear-gradient(to top, var(--b3-border-color) 1px, transparent 1px);
+}
+
+/* 文档 Tab 条只占标签宽度，剩余给只读条，好让 + 与下拉之间的空白用来拖窗口 */
+#layouts .layout__center .layout-tab-bar:not(.layout-tab-bar--readonly) {
+    flex: 0 1 auto;
+    min-width: 0;
+}
+
+#layouts .layout__center .layout-tab-bar--readonly {
+    flex: 1 1 auto;
+    min-width: 71px;
+    display: flex;
+    align-items: center;
+}
+
+#layouts .layout__center .layout-tab-bar--readonly .item--readonly {
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    height: var(--starter-topbar-height);
+    min-height: 0;
+    box-sizing: border-box;
+}
+
+#layouts .layout__center .layout-tab-bar--readonly .item--readonly:only-child {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+#layouts .layout__center .layout-tab-bar--readonly > .fn__flex-1,
+#layouts .layout__center .layout-tab-bar--readonly .item--readonly > .fn__flex-1 {
+    flex: 1 1 auto;
+    min-width: 24px;
+    align-self: stretch;
+    -webkit-app-region: drag;
+    app-region: drag;
+}
+
+#layouts .layout__center .layout-tab-bar--readonly .block__icon[data-type="new"],
+#layouts .layout__center .layout-tab-bar--readonly .block__icon[data-type="more"] {
+    flex-shrink: 0;
+    align-self: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-app-region: no-drag;
+    app-region: no-drag;
+}
+
+html.starter-hide-tab-new #layouts .layout__center .layout-tab-bar--readonly .block__icon[data-type="new"],
+html.starter-hide-tab-more #layouts .layout__center .layout-tab-bar--readonly .block__icon[data-type="more"] {
+    display: none !important;
+}
+
+html.starter-hide-tab-new.starter-hide-tab-more #layouts .layout__center .layout-tab-bar--readonly {
+    min-width: 24px;
+}
+
+#layouts .layout__center .layout-tab-bar .item:not(.item--readonly) {
+    box-sizing: border-box;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none;
+    font-style: normal !important;
+    background-color: transparent;
+    padding: 0 12px;
+    min-height: var(--starter-topbar-height);
+    height: var(--starter-topbar-height);
+    max-height: var(--starter-topbar-height);
+    line-height: var(--starter-topbar-height);
+    border-right: 1px solid var(--b3-border-color);
+}
+
+#layouts .layout__center .layout-tab-bar .item__text {
+    font-style: normal !important;
+    color: var(--b3-theme-on-surface);
+}
+
+#layouts .layout__center .layout-tab-bar .item--focus:not(.item--readonly) {
+    background-color: #ffffff;
+    box-shadow: none;
+}
+
+#layouts .layout__center .layout-tab-bar .item--focus .item__text {
+    color: var(--b3-theme-on-background);
+}
+
+:root[data-theme-mode="dark"] #layouts .layout__center .layout-tab-bar .item--focus:not(.item--readonly) {
+    background-color: #191919;
+}
+
+#layouts .layout-tab-bar .item:hover:not(.item--focus):not(.item--readonly) {
+    background-color: var(--b3-list-hover);
+    box-shadow: inset 0 -1px 0 var(--b3-border-color);
+}
+
+#layouts .layout-tab-bar--readonly .item--readonly {
+    margin: 0;
+    border: none;
+    background-color: transparent;
+}
+
+#layouts .layout-tab-bar--readonly .item--readonly:hover {
+    background-color: transparent;
+}
+
+#layouts .layout-tab-bar {
+    border-bottom-color: transparent;
+}
+
+#layouts [data-type="wnd"] > .layout-tab-container {
+    border-top: none;
+}
+
+/* 全宽横线：颜色复用 daylight --b3-border-color */
+body.body--toolbar-hide::after {
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: calc(var(--starter-topbar-height) - 1px);
+    height: 1px;
+    background-color: var(--b3-border-color);
+    z-index: 10;
+    pointer-events: none;
+}
+
+/* =========================================================
+ * ② / ④ 与顶栏对齐
+ * ========================================================= */
+
+body.body--toolbar-hide #dockRight:not(.starter-dock--sidebar-top),
+body.body--toolbar-hide #dockLeft:not(.starter-dock--sidebar-top) {
+    height: calc(100% - var(--starter-topbar-height)) !important;
+    margin-top: var(--starter-topbar-height) !important;
+}
+
+body.body--toolbar-hide .layout__dockl:not(.layout--float),
+body.body--toolbar-hide .layout__dockr:not(.layout--float) {
+    margin-top: var(--starter-topbar-height) !important;
+}
+
+/* =========================================================
+ * 左/右 dock → 对应侧栏顶部横向条
+ * DOM：theme.js 将 #dockLeft/#dockRight 插入 .layout__dockl/.layout__dockr 首子节点
+ * ========================================================= */
+
+.layout__dockl.starter-dock-panel--with-top,
+.layout__dockr.starter-dock-panel--with-top {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+.layout__dockl.starter-dock-panel--with-top > #dockLeft.starter-dock--sidebar-top,
+.layout__dockr.starter-dock-panel--with-top > #dockRight.starter-dock--sidebar-top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+    height: var(--starter-topbar-height);
+    min-height: var(--starter-topbar-height);
+    margin: 0;
+    padding: 0 4px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: none;
+    background-color: var(--b3-theme-background);
+}
+
+.layout__dockl.starter-dock-panel--with-top > #dockLeft.starter-dock--sidebar-top ~ *,
+.layout__dockr.starter-dock-panel--with-top > #dockRight.starter-dock--sidebar-top ~ * {
+    flex: 1 1 auto;
+    min-height: 0;
+    min-width: 0;
+}
+
+.layout__dockl > #dockLeft.starter-dock--sidebar-top .dock__items,
+.layout__dockr > #dockRight.starter-dock--sidebar-top .dock__items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.layout__dockl > #dockLeft.starter-dock--sidebar-top .dock__item,
+.layout__dockr > #dockRight.starter-dock--sidebar-top .dock__item {
+    margin: 2px;
+    padding: 4px;
+}
+
+/* daylight 近白 / midnight 近透明的 toolbar-hover 在侧栏顶条上对比不足，统一用 list-hover */
+.layout__dockl > #dockLeft.starter-dock--sidebar-top .dock__item:hover:not(.dock__item--activefocus),
+.layout__dockl > #dockLeft.starter-dock--sidebar-top .dock__item--active,
+.layout__dockr > #dockRight.starter-dock--sidebar-top .dock__item:hover:not(.dock__item--activefocus),
+.layout__dockr > #dockRight.starter-dock--sidebar-top .dock__item--active {
+    background-color: var(--b3-list-hover);
+}
+
+.layout__dockl > #dockLeft.starter-dock--sidebar-top .dock__item--space,
+.layout__dockr > #dockRight.starter-dock--sidebar-top .dock__item--space {
+    display: none;
+}
+
+.layout__dockl > #dockLeft.starter-dock--sidebar-top .dock__split,
+.layout__dockr > #dockRight.starter-dock--sidebar-top .dock__split {
+    width: 12px;
+    height: var(--starter-topbar-height);
+    flex-shrink: 0;
+}
+
+.layout__dockl > #dockLeft.starter-dock--sidebar-top .dock__split::after,
+.layout__dockr > #dockRight.starter-dock--sidebar-top .dock__split::after {
+    width: 1px;
+    height: 14px;
+    background: var(--b3-theme-on-surface-lighter);
+}
+
+/* =========================================================
+ * 顶栏：左右侧栏显隐按钮
+ * 左：#barWorkspace（思源标题）后；右：#windowControls（最小化）前
+ * ========================================================= */
+
+#starterToggleLeft,
+#starterToggleRight,
+#starterDonateHeart {
+    position: relative;
+    z-index: 2;
+    flex-shrink: 0;
+    pointer-events: auto;
+    -webkit-app-region: no-drag;
+    app-region: no-drag;
+}
+
+#starterDonateHeart svg.ft__pink {
+    color: #e85d75;
+}
+
+/* =========================================================
+ * ②③④：直角贴合（圆角/阴影只动布局面板，不动 daylight 全局圆角变量）
+ * ========================================================= */
+
+.layout__center,
+.layout__dockl,
+.layout__dockr,
+.layout__dockb {
+    border-radius: 0;
+}
+
+/* 中栏：藏起官方块级面包屑，文档路径条吃掉剩余宽度，右侧按钮贴右 */
+#layouts .layout__center .protyle-breadcrumb {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    overflow: hidden;
+}
+
+#layouts .layout__center .protyle-breadcrumb > .protyle-breadcrumb__bar:not(.starter-doc-path) {
+    display: none !important;
+}
+
+#layouts .layout__center .protyle-breadcrumb > .protyle-breadcrumb__space {
+    flex: 0 0 0 !important;
+    width: 0 !important;
+    min-width: 0 !important;
+    overflow: hidden;
+}
+
+#layouts .layout__center .starter-doc-path {
+    display: flex;
+    flex-wrap: nowrap !important;
+    align-items: center;
+    align-self: stretch;
+    flex: 1 1 auto;
+    width: auto;
+    max-width: none;
+    min-width: 0;
+    height: auto;
+    max-height: none;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--b3-theme-on-surface);
+}
+
+#layouts .layout__center .starter-doc-path span {
+    max-width: none;
+}
+
+#layouts .layout__center .starter-doc-path__item {
+    flex: 0 0 auto;
+    min-width: auto;
+    overflow: visible;
+    white-space: nowrap;
+    cursor: pointer;
+    border-radius: var(--b3-border-radius-s);
+    padding: 2px 6px;
+    color: var(--b3-theme-on-background);
+}
+
+#layouts .layout__center .starter-doc-path__item--keep {
+    flex: 0 0 auto;
+}
+
+#layouts .layout__center .starter-doc-path__item--mid {
+    flex: 0 0 auto;
+}
+
+#layouts .layout__center .starter-doc-path--tight .starter-doc-path__item--last {
+    flex: 1 1 auto;
+    min-width: 4em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#layouts .layout__center .starter-doc-path__item:hover {
+    background-color: var(--b3-list-hover);
+}
+
+#layouts .layout__center .starter-doc-path__sep {
+    flex: 0 0 auto;
+    padding: 0 2px;
+    color: var(--b3-theme-on-surface-light);
+    user-select: none;
+}
+
+/* 面包屑：收藏五角星在右侧工具栏最左（定位按钮左侧）；尺寸跟其它 block__icon */
+#layouts .layout__center .protyle-breadcrumb > .starter-fav-btn {
+    flex-shrink: 0;
+}
+
+#layouts .layout__center .protyle-breadcrumb > .starter-fav-btn svg {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.5;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+}
+
+#layouts .layout__center .protyle-breadcrumb > .starter-fav-btn--on {
+    color: #f6c050;
+}
+
+#layouts .layout__center .protyle-breadcrumb > .starter-fav-btn--on svg {
+    fill: #f6c050;
+    stroke: #f6c050;
+}
+
+/* 正文 + 面包屑 + 右侧栏同色；左侧栏与顶栏仍用 chrome 底 */
+:root[data-theme-mode="light"] .layout__center .protyle,
+:root[data-theme-mode="light"] .layout__center .protyle-breadcrumb {
+    background-color: #ffffff;
+}
+
+:root[data-theme-mode="light"] .layout__dockr {
+    --b3-theme-background: #ffffff;
+    background-color: #ffffff;
+}
+
+:root[data-theme-mode="light"] .layout__dockr .sy__outline,
+:root[data-theme-mode="light"] .layout__dockr .sy__outline .block__icons {
+    background-color: #ffffff;
+}
+
+:root[data-theme-mode="dark"] .layout__center .protyle,
+:root[data-theme-mode="dark"] .layout__center .protyle-breadcrumb,
+:root[data-theme-mode="dark"] .layout__center .layout-tab-container {
+    background-color: #191919;
+}
+
+:root[data-theme-mode="dark"] .layout__dockr {
+    --b3-theme-background: #191919;
+    background-color: #191919;
+}
+
+:root[data-theme-mode="dark"] .layout__dockr .sy__outline,
+:root[data-theme-mode="dark"] .layout__dockr .sy__outline .block__icons {
+    background-color: #191919;
+}
+
+/* 大纲：不显示文档名与 H1/H2 标记，一级标题加粗 */
+.sy__outline > .b3-list-item,
+.sy__outline .b3-list-item[data-type="NodeDocument"] {
+    display: none !important;
+}
+
+.sy__outline .b3-list-item .b3-list-item__graphic {
+    display: none !important;
+}
+
+.sy__outline .b3-list-item[data-subtype="h1"] .b3-list-item__text {
+    font-weight: 700;
+}
+
+/* 文件树隐藏笔记本：文档作为第一级；按嵌套层立刻减一层缩进，避免展开后闪一下 */
+html.starter-hide-notebook .sy__file li[data-type="navigation-root"] {
+    display: none !important;
+}
+
+html.starter-hide-notebook .sy__file > ul.b3-list.fn__flex-column {
+    display: none !important;
+}
+
+html.starter-hide-notebook .sy__file ul[data-url] > ul > li[data-type="navigation-file"] {
+    --file-toggle-width: 18px !important;
+}
+
+html.starter-hide-notebook .sy__file ul[data-url] > ul > li[data-type="navigation-file"] > .b3-list-item__toggle {
+    padding-left: 0 !important;
+}
+
+html.starter-hide-notebook .sy__file ul[data-url] > ul > ul > li[data-type="navigation-file"] {
+    --file-toggle-width: 36px !important;
+}
+
+html.starter-hide-notebook .sy__file ul[data-url] > ul > ul > li[data-type="navigation-file"] > .b3-list-item__toggle {
+    padding-left: 18px !important;
+}
+
+html.starter-hide-notebook .sy__file ul[data-url] > ul > ul > ul > li[data-type="navigation-file"] {
+    --file-toggle-width: 54px !important;
+}
+
+html.starter-hide-notebook .sy__file ul[data-url] > ul > ul > ul > li[data-type="navigation-file"] > .b3-list-item__toggle {
+    padding-left: 36px !important;
+}
+
+html.starter-hide-notebook .sy__file ul[data-url] > ul > ul > ul > ul > li[data-type="navigation-file"] {
+    --file-toggle-width: 72px !important;
+}
+
+html.starter-hide-notebook .sy__file ul[data-url] > ul > ul > ul > ul > li[data-type="navigation-file"] > .b3-list-item__toggle {
+    padding-left: 54px !important;
+}
+
+html.starter-hide-notebook .sy__file ul[data-url] > ul > ul > ul > ul > ul > li[data-type="navigation-file"] {
+    --file-toggle-width: 90px !important;
+}
+
+html.starter-hide-notebook .sy__file ul[data-url] > ul > ul > ul > ul > ul > li[data-type="navigation-file"] > .b3-list-item__toggle {
+    padding-left: 72px !important;
+}
+
+html.starter-hide-notebook .sy__file ul[data-url] > ul > ul > ul > ul > ul > ul > li[data-type="navigation-file"] {
+    --file-toggle-width: 108px !important;
+}
+
+html.starter-hide-notebook .sy__file ul[data-url] > ul > ul > ul > ul > ul > ul > li[data-type="navigation-file"] > .b3-list-item__toggle {
+    padding-left: 90px !important;
+}
+
+html.starter-hide-notebook .sy__file ul[data-url] > ul > ul > ul > ul > ul > ul > ul > li[data-type="navigation-file"] {
+    --file-toggle-width: 126px !important;
+}
+
+html.starter-hide-notebook .sy__file ul[data-url] > ul > ul > ul > ul > ul > ul > ul > li[data-type="navigation-file"] > .b3-list-item__toggle {
+    padding-left: 108px !important;
+}
+
+/* 文件树：收藏 / 最近打开与官方树同一滚动区 */
+#layouts .sy__file {
+    overflow: hidden;
+}
+
+#layouts .sy__file > .starter-file-scroll {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow: auto;
+}
+
+#layouts .sy__file > .starter-file-scroll > .fn__flex-1 {
+    flex: 0 0 auto;
+    overflow: visible !important;
+    height: auto !important;
+    max-height: none !important;
+}
+
+#layouts .sy__file .starter-recent-docs,
+#layouts .sy__file .starter-fav-docs {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    max-height: none;
+    padding-bottom: 10px;
+}
+
+#layouts .sy__file .starter-recent-docs__head,
+#layouts .sy__file .starter-fav-docs__head {
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+#layouts .sy__file .starter-recent-docs__head .b3-list-item__text,
+#layouts .sy__file .starter-fav-docs__head .b3-list-item__text {
+    color: var(--b3-theme-on-surface);
+    font-size: 12px;
+}
+
+#layouts .sy__file .starter-recent-docs__list,
+#layouts .sy__file .starter-fav-docs__list {
+    overflow: visible;
+}
+
+#layouts .sy__file .starter-recent-docs.starter-recent-docs--collapsed .starter-recent-docs__list,
+#layouts .sy__file .starter-fav-docs.starter-fav-docs--collapsed .starter-fav-docs__list {
+    display: none;
+}
+
+#layouts .sy__file .starter-recent-docs__item--current,
+#layouts .sy__file .starter-fav-docs__item--current {
+    background-color: var(--b3-list-hover);
+}
+
+#layouts .sy__file .starter-recent-docs__empty .b3-list-item__text,
+#layouts .sy__file .starter-fav-docs__more .b3-list-item__text {
+    color: var(--b3-theme-on-surface-light);
+}
+
+#layouts .sy__file [data-starter-recent-doc],
+#layouts .sy__file [data-starter-fav-doc],
+#layouts .sy__file .starter-fav-docs__more {
+    cursor: pointer;
+}
+
+#layouts .sy__file .starter-recent-docs .b3-list-item__icon svg,
+#layouts .sy__file .starter-fav-docs .b3-list-item__icon svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* 行内代码文字色（Notion #d6716a）；不含代码块 */
+.b3-typography :not(pre) > code,
+.protyle-wysiwyg [data-node-id] span[data-type~="code"] {
+    color: #d6716a;
+}
+
+/* 表格表头与正文同字重（仅 html.starter-plain-table-head；官方 thead th 强制粗体，需压过） */
+html.starter-plain-table-head .b3-typography table thead th,
+html.starter-plain-table-head .protyle-wysiwyg table thead th,
+html.starter-plain-table-head .protyle-wysiwyg [data-node-id] table thead th {
+    font-weight: 400 !important;
+}
+
+html.starter-plain-table-head .b3-typography table thead th *:not(strong):not(b):not([data-type~="strong"]),
+html.starter-plain-table-head .protyle-wysiwyg table thead th *:not(strong):not(b):not([data-type~="strong"]) {
+    font-weight: inherit !important;
+}
+
+/* 正文段落行高（仅 html.starter-block-line-height；不改列表/标题整块以免叠距） */
+html.starter-block-line-height .protyle-wysiwyg [data-node-id].p,
+html.starter-block-line-height .b3-typography p {
+    line-height: var(--starter-block-line-height);
+}
+
+/* 文档引用：未判定前只改正文色+加粗；图标/下划线由 #starterDocRefStyle 按 data-id 注入，禁止写 span.style */
+html.starter-custom-doc-ref .b3-typography span[data-type~="block-ref"][data-id]:not(.av__celltext):not([custom-fhelper-child-nav] *),
+html.starter-custom-doc-ref .protyle-wysiwyg [data-node-id] span[data-type~="block-ref"][data-id]:not(.av__celltext):not([custom-fhelper-child-nav] *) {
+    font-weight: 700;
+    color: var(--b3-theme-on-background);
+    text-decoration: none;
+    border-bottom: none;
+    transition: none;
+}
+
+html.starter-custom-doc-ref .b3-typography [custom-fhelper-child-nav] span[data-type~="block-ref"][data-id],
+html.starter-custom-doc-ref .protyle-wysiwyg [data-node-id][custom-fhelper-child-nav] span[data-type~="block-ref"][data-id] {
+    font-weight: inherit;
+    color: var(--b3-protyle-inline-blockref-color);
+    text-decoration: none;
+    border-bottom: none;
+    padding-left: 0;
+    padding-bottom: 0;
+    background-image: none;
+}
+
+html.starter-custom-doc-ref .b3-typography [custom-fhelper-child-nav] span[data-type~="block-ref"][data-id]::before,
+html.starter-custom-doc-ref .protyle-wysiwyg [data-node-id][custom-fhelper-child-nav] span[data-type~="block-ref"][data-id]::before {
+    content: none !important;
+    display: none !important;
+    width: 0 !important;
+    background: none !important;
+    -webkit-mask: none !important;
+    mask: none !important;
+}
+
+body.body--toolbar-hide .layout__wnd--left .layout-tab-container,
+body.body--toolbar-hide .layout__wnd--right .layout-tab-container {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.layout--float.layout__dockl,
+.layout--float.layout__dockr,
+.layout--float.layout__dockb {
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/*
+ * 分区竖/横线：恢复被官方 content:none + layout-space:0 吃掉的线。
+ * 颜色一律 var(--b3-border-color)（daylight）。
+ */
+.layout__dockl + .layout__resize,
+.layout__center + .layout__resize {
+    width: 1px;
+    margin: 0;
+}
+
+.layout:not(.layout__center) > .layout__resize {
+    height: 1px;
+    margin: 0;
+}
+
+.layout__dockl + .layout__resize::after,
+.layout__center + .layout__resize::after,
+.layout:not(.layout__center) > .layout__resize::after {
+    content: "";
+    background-color: var(--b3-border-color);
+}
+
+.layout__resize--lr::after {
+    width: 1px;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: var(--b3-border-color);
+}
+
+body.body--toolbar-hide .layout__dockl + .layout__resize::after,
+body.body--toolbar-hide .layout__center + .layout__resize::after {
+    top: var(--starter-topbar-height);
+    height: calc(100% - var(--starter-topbar-height));
+}
+
+.layout__resize:not(.layout__resize--lr)::after {
+    height: 1px;
+    top: 0;
+    background-color: var(--b3-border-color);
+}
+
+/* =========================================================
+ * 显示顶栏：仅压矮 #toolbar，底线颜色仍用 daylight 边框色
+ * ========================================================= */
+
+body:not(.body--toolbar-hide) #toolbar.toolbar {
+    height: 28px;
+    line-height: 28px;
+    position: relative;
+    z-index: 5;
+    border-bottom: none;
+}
+
+body:not(.body--toolbar-hide) #toolbar.toolbar::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background-color: var(--b3-border-color);
+    z-index: 20;
+    pointer-events: none;
+}
+
+body:not(.body--toolbar-hide) #toolbar .toolbar__item--win,
+body:not(.body--toolbar-hide) #toolbar .toolbar__item--close {
+    height: 27px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}

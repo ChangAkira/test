@@ -1,0 +1,66 @@
+{
+    "pluginName": "GitHub 发布插件",
+    "pluginDescription": "将思源笔记发布到 GitHub 仓库",
+    
+    "publishToGitHub": "发布到 GitHub",
+    "publishCurrentNote": "发布当前笔记",
+    "pluginSettings": "插件设置",
+    "help": "使用帮助",
+    
+    "githubUsername": "GitHub 用户名",
+    "accessToken": "Access Token",
+    "repository": "仓库地址",
+    "branch": "分支名称",
+    "basePath": "基础路径",
+    
+    "testConnection": "测试连接",
+    "connectionSuccess": "连接测试成功！配置有效。",
+    "connectionFailed": "连接测试失败",
+    
+    "publishSuccess": "发布成功！",
+    "publishFailed": "发布失败",
+    "configIncomplete": "配置不完整",
+    "pleaseOpenNote": "请先打开一篇笔记",
+    
+    "enterFileName": "请输入上传目录名",
+    "cancel": "取消",
+    
+    "importantNote": "<strong>注意：</strong>需要 GitHub Personal Access Token 的 repo 权限",
+    
+    "validationErrors": {
+        "usernameRequired": "GitHub 用户名不能为空",
+        "tokenRequired": "Access Token 不能为空",
+        "repoRequired": "仓库地址不能为空",
+        "repoFormat": "仓库地址格式不正确，应为 username/repo",
+        "branchRequired": "分支名称不能为空"
+    },
+    
+    "uninstall": "已卸载",
+    "allDataRemoved": "所有数据已删除",
+    
+    "exportingNote": "导出笔记",
+    "processingImages": "处理图片",
+    "uploadingNote": "上传笔记",
+    "deletingPublish": "删除发布",
+    "deleteSuccess": "删除成功！",
+    "deleteFailed": "删除失败",
+    "configSaved": "配置保存成功",
+    "configValidationFailed": "配置验证失败",
+    "configError": "配置错误",
+    "testingConnection": "正在测试连接",
+    "authFailed": "认证失败",
+    "repoAccessFailed": "仓库访问失败",
+    "branchAccessFailed": "分支访问失败",
+    
+    "uploadFolder": "上传目录",
+    "frontMatter": "Front Matter 元数据",
+    "deleteConfirmation": "确认删除",
+    "deleteConfirmMessage": "确定要从 GitHub 删除笔记 \"{noteTitle}\" 的发布内容吗？",
+    "deleteWarning": "此操作将删除 GitHub 上的文件，不可撤销。",
+    "confirmDelete": "确认删除",
+    
+    "uploadTo": "上传地址",
+    "publishAs": "发布地址",
+    
+    "feedback": "问题反馈"
+}

@@ -1,0 +1,188 @@
+{
+    "settingsPanel": "Settings Panel",
+    "tips": "Add footnote",
+    "settings": {
+        "css": {
+            "title": "Custom Style",
+            "description": "Customize footnote blockref, selected text style, and footnote content block style"
+        },
+        "groups": {
+            "container": "Footnote Storage Settings",
+            "style": "Footnote Style Settings",
+            "dock": "Footnote Dock",
+            "presets": "Presets",
+            "reset": "Reset Settings"
+        },
+        "saveLocation": {
+            "title": "Footnote Location",
+            "description": "Current document, Specified document or Child Document",
+            "current": "Current Document",
+            "specified": "Specified Document",
+            "childDoc": "Child Document",
+            "afterParent": "After Parent Block",
+            "customPath": "Custom Path"
+        },
+        "docId": {
+            "title": "Specified Document ID",
+            "description": "Takes effect when footnote location is set to Specified document"
+        },
+        "footnoteContainerTitle": {
+            "title": "Footnote Container Title",
+            "description": "Set the document title to store footnotes when the footnote location is set to Current Document.<br/>Template variable: Current document title <code>${filename}</code>",
+            "value": "# Footnotes"
+        },
+        "footnoteContainerTitle2": {
+            "title": "Footnote Container Title",
+            "description": "Set the document title to store footnotes when the footnote location is set to Specified Document.<br/>Template variable: Current document title <code>${filename}</code>",
+            "value": "## ${filename} Footnotes"
+        },
+        "footnoteContainerTitle3": {
+            "title": "Footnote Container Title",
+            "description": "Set the document title to store footnotes when the footnote location is set to Child Document.<br/>Template variable: Current document title <code>${filename}</code>",
+            "value": "${filename} Footnotes"
+        },
+        "footnoteNotebook": {
+            "title": "Target Notebook",
+            "description": "Select the notebook where footnote documents will be stored"
+        },
+        "footnoteDocPath": {
+            "title": "Document Path",
+            "description": "Set the path for footnote documents, supports Sprig template syntax (e.g. <code>/${{now | date \"2006/200601\"}}/</code>) and <code>${filename}</code> variable<br/>The document will be created automatically if the path doesn't exist"
+        },
+        "updateFootnoteContainerTitle": {
+            "title": "Auto-update footnote container title?",
+            "description": "Auto-update footnote container title to match template every time a footnote is created?"
+        },
+        "referenceInsertMode": {
+            "title": "Footnote Insert Mode",
+            "description": "Footnote Anchor appends the configured anchor after the selection; Selected Text Reference turns the selection itself into a reference without adding an extra anchor",
+            "footnote": "Add Footnote Anchor",
+            "blockRef": "Use Selected Text as Reference"
+        },
+        "presets": {
+            "choose": "Choose a preset",
+            "empty": "No saved presets",
+            "create": {
+                "title": "Save Current Settings",
+                "description": "Save all current settings as a new preset",
+                "label": "Create Preset",
+                "dialogTitle": "Create Preset",
+                "placeholder": "Enter a preset name"
+            },
+            "saved": {
+                "title": "Saved Presets",
+                "description": "Select a custom preset to apply or delete"
+            },
+            "apply": {
+                "title": "Apply Preset",
+                "description": "Switch all settings to the selected preset",
+                "label": "Apply"
+            },
+            "update": {
+                "title": "Update Preset",
+                "description": "Overwrite the selected preset with all current settings while keeping its name",
+                "label": "Update",
+                "confirm": "Overwrite preset “${name}” with the current settings?"
+            },
+            "delete": {
+                "title": "Delete Preset",
+                "description": "Delete the selected custom preset",
+                "label": "Delete",
+                "confirm": "Delete preset “${name}”?"
+            },
+            "messages": {
+                "nameRequired": "Enter a preset name first",
+                "nameExists": "A preset with this name already exists",
+                "selectRequired": "Select a preset first",
+                "created": "Preset created",
+                "applied": "Preset applied",
+                "updated": "Preset updated",
+                "deleted": "Preset deleted"
+            }
+        },
+        "footnoteRefStyle": {
+            "title": "Footnote Reference Style",
+            "description": "Style for footnote reference",
+            "ref": "Block Ref",
+            "link": "Block link"
+        },
+        "selectFontStyle": {
+            "title": "Selected Text Style",
+            "description": "Style for selected text",
+            "none": "None",
+            "custom": "Custom Style"
+        },
+        "order": {
+            "title": "Footnote Insert Order",
+            "description": "Ascending or descending order",
+            "asc": "Ascending",
+            "desc": "Descending"
+        },
+        "footnoteBlockref": {
+            "title": "Footnote Blockref Anchor Text",
+            "description": "Custom anchor text",
+            "value": "[*]"
+        },
+        "enableOrderedFootnotes": {
+            "title": "Enable Footnote Numbering",
+            "description": "Use numeric footnotes (like [1], [2], etc.) instead of custom anchor text. When enabled, all footnotes will be automatically reordered and renumbered."
+        },
+        "footnoteAlias": {
+            "title": "Footnote Block Alias",
+            "description": "Set the alias for footnote content blocks",
+            "value": ""
+        },
+        "floatDialog": {
+            "title": "Enable Footnote Dialog",
+            "description": "When enabled, a dialog will pop up when adding footnotes for convenient footnote content entry"
+        },
+        "footnoteDock": {
+            "title": "Enable Footnote Dock",
+            "description": "When enabled, a footnote dock panel will be shown on the right side for viewing and editing all footnotes in the current document"
+        },
+        "template": {
+            "title": "Footnote Template",
+            "description": "Template variables: <code>${selection}</code> rich text content of selected text, <code>${selection:text}</code> plain text content of selected text, <code>${content}</code> footnote content placeholder, <code>${refID}</code> block ID containing the selected text, <code>${index}</code> footnote reference anchor text with original block link by default, <code>${index:text}</code> footnote reference anchor text plain text</br>Use <code>${{...}}</code> for Sprig syntax, e.g. insert current time <code>${{now | date \"20060102 15:04:05\"}}</code></br>You can use kramdown syntax to style the block"
+        },
+        "reset": {
+            "title": "Reset Settings",
+            "description": "Reset all settings to default values",
+            "label": "Reset",
+            "confirm": "Are you sure you want to reset all settings to default values?",
+            "confirmMessage": "Are you sure you want to reset all settings to default values? This action cannot be undone.",
+            "message": "All settings have been reset to default values"
+        }
+    },
+    "deleteFootnote": "Delete Footnote",
+    "reorderFootnotes": "Reorder Footnotes",
+    "cancelReorderFootnotes": "Cancel Reorder Footnotes",
+    "errors": {
+        "noDocId": "[Block Ref Footnote Plugin] Please fill in the specified document ID",
+        "noNotebook": "[Block Ref Footnote Plugin] Please select a notebook for footnotes",
+        "createDocFailed": "[Block Ref Footnote Plugin] Failed to create footnote document",
+        "selectTextForBlockRef": "Select the text to use as a reference first"
+    },
+    "creatingFootnoteDoc": "Creating footnote document...",
+    "indexAnchor": "[*]",
+    "showFootnoteSelection": "Show selected text",
+    "hideFootnoteSelection": "Hide selected text",
+    "footnoteDock": {
+        "title": "Footnote List",
+        "empty": "No footnotes in current document",
+        "refresh": "Refresh",
+        "loading": "Loading...",
+        "error": "Failed to load footnotes",
+        "collapseAll": "Collapse All",
+        "expandAll": "Expand All",
+        "collapse": "Collapse",
+        "expand": "Expand",
+        "openFootnote": "Open Footnote",
+        "openOriginal": "Open Original Block",
+        "delete": "Delete Footnote",
+        "deleteConfirm": "Delete footnote “${content}”? This action cannot be undone.",
+        "deleteSuccess": "Footnote deleted",
+        "deleteError": "Failed to delete footnote"
+    },
+    "addFootnote": "Add Footnote",
+    "jumpToFootnote": "Jump to Footnote"
+}

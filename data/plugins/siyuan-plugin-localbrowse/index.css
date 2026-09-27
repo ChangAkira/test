@@ -1,0 +1,515 @@
+/* LocalBrowse Plugin Styles */
+
+@keyframes cd-pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+}
+
+.cd-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 4px;
+    box-sizing: border-box;
+    font-size: 13px;
+    overflow: hidden;
+}
+
+.cd-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-bottom: 1px solid var(--b3-border, #eee);
+    transition: background 0.15s ease;
+    user-select: none;
+}
+
+.cd-item:hover {
+    background: var(--b3-theme-hover, #e3f2fd);
+}
+
+.cd-item.cd-parent {
+    background: var(--b3-theme-surface, #fafafa);
+}
+
+.cd-item.cd-parent:hover {
+    background: var(--b3-theme-hover, #e8f4fd);
+}
+
+.cd-item .cd-icon {
+    font-size: 16px;
+    margin-right: 8px;
+    flex-shrink: 0;
+    width: 22px;
+    text-align: center;
+}
+
+.cd-item .cd-name {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 13px;
+}
+
+.cd-item .cd-size {
+    font-size: 11px;
+    color: var(--b3-theme-secondary, #999);
+    margin-left: 8px;
+    flex-shrink: 0;
+}
+
+#cd-breadcrumb {
+    font-size: 12px;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: "SF Mono", "Cascadia Code", Monaco, monospace;
+    color: var(--b3-theme-on-surface, #666);
+}
+
+#cd-file-list {
+    flex: 1;
+    overflow-y: auto;
+    border: 1px solid var(--b3-border, #e0e0e0);
+    border-radius: 4px;
+    background: var(--b3-theme-background, #fff);
+    min-height: 0;
+}
+
+#cd-file-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+#cd-file-list::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#cd-file-list::-webkit-scrollbar-thumb {
+    background: var(--b3-border, #ccc);
+    border-radius: 3px;
+}
+
+#cd-file-list::-webkit-scrollbar-thumb:hover {
+    background: var(--b3-theme-secondary, #999);
+}
+
+#cd-status-bar {
+    margin-top: 6px;
+    font-size: 11px;
+    color: var(--b3-theme-secondary, #999);
+    text-align: center;
+    padding: 4px;
+}
+
+#cd-refresh {
+    padding: 4px 10px;
+    font-size: 11px;
+    background: #2196f3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#cd-refresh:hover {
+    background: #1976d2;
+}
+
+/* Loading and empty states */
+.cd-loading,
+.cd-empty,
+.cd-error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    color: var(--b3-theme-secondary, #999);
+    font-size: 14px;
+    text-align: center;
+}
+
+.cd-error {
+    color: var(--b3-theme-error, #d32f2f);
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .cd-item:hover {
+        background: rgba(66, 133, 244, 0.15);
+    }
+}
+
+/* Favorites drag-over highlight (uses pseudo-element to avoid layout shift) */
+.cd-fav-drag-before {
+    position: relative;
+}
+.cd-fav-drag-before::before {
+    content: '';
+    position: absolute;
+    left: -3px;
+    top: 10%;
+    bottom: 10%;
+    width: 3px;
+    background: var(--b3-theme-primary, #4285f4);
+    border-radius: 2px;
+    pointer-events: none;
+}
+.cd-fav-drag-after {
+    position: relative;
+}
+.cd-fav-drag-after::after {
+    content: '';
+    position: absolute;
+    right: -3px;
+    top: 10%;
+    bottom: 10%;
+    width: 3px;
+    background: var(--b3-theme-primary, #4285f4);
+    border-radius: 2px;
+    pointer-events: none;
+}
+
+/* Favorites list: hide scrollbar in WebKit */
+#cd-favorites-list::-webkit-scrollbar {
+    display: none;
+}
+
+/* Audio control buttons */
+.cd-audio-btn {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 24px !important;
+    height: 24px !important;
+    min-width: 24px !important;
+    min-height: 24px !important;
+    max-width: 24px !important;
+    max-height: 24px !important;
+    padding: 0 !important;
+    border: none !important;
+    border-radius: 6px;
+    background: rgba(128, 128, 128, 0.1);
+    color: var(--b3-theme-on-background, #333);
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: background 0.2s, opacity 0.2s, transform 0.15s ease-out;
+    user-select: none;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.cd-audio-btn:hover {
+    background: rgba(128, 128, 128, 0.2);
+}
+.cd-audio-btn:active {
+    transform: scale(0.96);
+}
+
+/* Play button: larger, primary color */
+.cd-audio-btn-play {
+    width: 28px !important;
+    height: 28px !important;
+    min-width: 28px !important;
+    min-height: 28px !important;
+    max-width: 28px !important;
+    max-height: 28px !important;
+    padding: 0 !important;
+    border: none !important;
+    border-radius: 50%;
+    background: var(--b3-theme-primary, #4285f4);
+    color: #fff;
+}
+.cd-audio-btn-play:hover {
+    background: var(--b3-theme-primary-light, #5c9aff);
+}
+
+/* Ensure SVG icons never overflow button */
+.cd-audio-btn svg {
+    display: block;
+    width: auto !important;
+    height: auto !important;
+    max-width: 100%;
+    max-height: 100%;
+    flex-shrink: 0;
+}
+
+/* Loading spinner animation */
+@keyframes cd-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+.cd-audio-btn.cd-loading svg {
+    animation: cd-spin 1s linear infinite;
+}
+
+/* ==================== Video Control Buttons ==================== */
+.cd-video-btn {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 24px !important;
+    height: 24px !important;
+    min-width: 24px !important;
+    min-height: 24px !important;
+    max-width: 24px !important;
+    max-height: 24px !important;
+    padding: 0 !important;
+    border: none !important;
+    border-radius: 6px;
+    background: rgba(128, 128, 128, 0.1);
+    color: var(--b3-theme-on-background, #333);
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: background 0.2s, color 0.2s, transform 0.15s ease-out;
+    user-select: none;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.cd-video-btn:hover {
+    background: rgba(128, 128, 128, 0.2);
+}
+.cd-video-btn:active {
+    transform: scale(0.96);
+}
+.cd-video-btn.cd-active {
+    background: rgba(128, 128, 128, 0.18);
+    color: var(--b3-theme-primary, #4285f4);
+}
+
+/* Play button: larger, primary color circle */
+.cd-video-btn-play {
+    width: 28px !important;
+    height: 28px !important;
+    min-width: 28px !important;
+    min-height: 28px !important;
+    max-width: 28px !important;
+    max-height: 28px !important;
+    padding: 0 !important;
+    border: none !important;
+    border-radius: 50%;
+    background: var(--b3-theme-primary, #4285f4);
+    color: #fff;
+}
+.cd-video-btn-play:hover {
+    background: var(--b3-theme-primary-light, #5c9aff);
+}
+
+/* Ensure SVG icons never overflow button */
+.cd-video-btn svg {
+    display: block;
+    width: auto !important;
+    height: auto !important;
+    max-width: 100%;
+    max-height: 100%;
+    flex-shrink: 0;
+}
+
+/* Speed text button variant */
+.cd-video-btn-speed {
+    width: auto !important;
+    min-width: 40px !important;
+    max-width: none !important;
+    padding: 0 5px !important;
+    font-size: 10px;
+    font-weight: 500;
+    font-family: inherit;
+    line-height: 1;
+    text-align: center;
+}
+
+/* Video progress bar: hover to show thumb */
+#cd-video-progress-wrap:hover #cd-video-progress-thumb {
+    opacity: 1 !important;
+}
+
+/* Video fullscreen: cd-video-bar as fullscreen target */
+#cd-video-bar:fullscreen,
+#cd-video-bar:-webkit-full-screen {
+    background: #000;
+    display: flex !important;
+    flex-direction: column;
+}
+#cd-video-bar:fullscreen #cd-video-wrap,
+#cd-video-bar:-webkit-full-screen #cd-video-wrap {
+    flex: 1;
+    height: auto !important;
+    min-height: 0 !important;
+}
+#cd-video-bar:fullscreen #cd-video-resize-handle,
+#cd-video-bar:-webkit-full-screen #cd-video-resize-handle {
+    display: none;
+}
+
+/* ==================== Tab Bar ==================== */
+#cd-tab-bar {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    border-bottom: 1px solid var(--b3-border, #e0e0e0);
+    margin-bottom: 4px;
+}
+
+.cd-tab-btn {
+    padding: 6px 12px;
+    font-size: 12px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    color: var(--b3-theme-secondary, #999);
+    cursor: pointer;
+    transition: all 0.2s;
+    flex-shrink: 0;
+}
+
+.cd-tab-btn:hover {
+    color: var(--b3-theme-primary, #4285f4);
+}
+
+.cd-tab-btn.cd-tab-active {
+    color: var(--b3-theme-primary, #4285f4);
+    border-bottom-color: var(--b3-theme-primary, #4285f4);
+}
+
+/* ==================== Assets Panel ==================== */
+#cd-panel-assets,
+#cd-panel-clean {
+    flex-direction: column;
+    flex: 1;
+    overflow: hidden;
+}
+
+#cd-assets-list,
+#cd-clean-results {
+    flex: 1;
+    overflow-y: auto;
+    border: 1px solid var(--b3-border, #e0e0e0);
+    border-radius: 4px;
+    background: var(--b3-theme-background, #fff);
+    min-height: 0;
+}
+
+#cd-assets-list::-webkit-scrollbar,
+#cd-clean-results::-webkit-scrollbar {
+    width: 6px;
+}
+
+#cd-assets-list::-webkit-scrollbar-track,
+#cd-clean-results::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#cd-assets-list::-webkit-scrollbar-thumb,
+#cd-clean-results::-webkit-scrollbar-thumb {
+    background: var(--b3-border, #ccc);
+    border-radius: 3px;
+}
+
+#cd-assets-list::-webkit-scrollbar-thumb:hover,
+#cd-clean-results::-webkit-scrollbar-thumb:hover {
+    background: var(--b3-theme-secondary, #999);
+}
+
+#cd-assets-summary {
+    margin-bottom: 4px;
+    padding: 4px 8px;
+    font-size: 11px;
+    color: var(--b3-theme-secondary, #888);
+    background: var(--b3-theme-surface, #f5f5f5);
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+/* Asset item hover */
+.cd-asset-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    border-bottom: 1px solid var(--b3-border, #eee);
+    cursor: pointer;
+    transition: background 0.15s;
+    user-select: none;
+}
+
+/* ==================== Clean Panel ==================== */
+.cd-clean-mode-btn {
+    padding: 4px 10px;
+    font-size: 12px;
+    background: var(--b3-theme-surface, #f0f0f0);
+    color: var(--b3-theme-on-background, #333);
+    border: 1px solid var(--b3-border, #ddd);
+    border-radius: 4px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.cd-clean-mode-btn.cd-clean-active {
+    background: var(--b3-theme-primary, #4285f4);
+    color: #fff;
+    border: none;
+}
+
+#cd-clean-progress {
+    margin-bottom: 8px;
+    flex-shrink: 0;
+}
+
+#cd-clean-progress-bar {
+    height: 100%;
+    background: var(--b3-theme-primary, #4285f4);
+    border-radius: 2px;
+    width: 0%;
+    transition: width 0.3s;
+}
+
+#cd-clean-actions {
+    margin-top: 4px;
+    padding: 6px 10px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-top: 1px solid var(--b3-border, #eee);
+}
+
+/* === 内部资源面板 === */
+.cd-assets-node:hover,
+.cd-asset-file:hover {
+    background: var(--b3-theme-hover, #e3f2fd);
+}
+
+@media (prefers-color-scheme: dark) {
+    .cd-assets-node:hover,
+    .cd-asset-file:hover {
+        background: rgba(66, 133, 244, 0.15);
+    }
+}
+
+/* ==================== Favorite Tree Panel ==================== */
+#cd-fav-tree-wrap {
+    flex-direction: column;
+}
+
+#cd-fav-tree {
+    scrollbar-width: thin;
+}
+
+#cd-fav-tree::-webkit-scrollbar {
+    width: 5px;
+}
+
+#cd-fav-tree::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#cd-fav-tree::-webkit-scrollbar-thumb {
+    background: var(--b3-border, #ccc);
+    border-radius: 3px;
+}
+
+#cd-fav-tree::-webkit-scrollbar-thumb:hover {
+    background: var(--b3-theme-secondary, #999);
+}
