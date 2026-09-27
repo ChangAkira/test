@@ -1,0 +1,1619 @@
+{
+  "kmind-zen:license:lastKnownSiyuanId": "1789139779047",
+  "kmind-zen:license:lastSeenAtMs": "1790472060116",
+  "kmind-zen:siyuan:onboarding:v1:seen": "1",
+  "kmind-zen:updateDialog:state:v1": "{\"initialized\":{\"siyuan\":true},\"lastObservedVersion\":{\"siyuan\":\"0.44.0\"},\"readVersions\":{\"updateDialog.readVersion.siyuan.0.44.0\":true},\"pendingReminderVersion\":{},\"noticeExposed\":{},\"noticeClicked\":{},\"tutorialExposed\":{},\"tutorialClicked\":{}}",
+  "local-bazaar": {
+    "downloadedIcon": "0",
+    "downloadedPlugin": "0",
+    "downloadedTemplate": "0",
+    "downloadedTheme": "0",
+    "downloadedWidget": "0",
+    "icon": "0",
+    "plugin": "2",
+    "template": "0",
+    "theme": "0",
+    "widget": "0"
+  },
+  "local-closed-tabs": [
+    {
+      "active": true,
+      "activeTime": "1789554027419",
+      "children": {
+        "customModelData": {
+          "bookInfo": {
+            "title": "微信读书 API Key"
+          },
+          "url": "https://weread.qq.com/r/weread-skills"
+        },
+        "customModelType": "siyuan-sireaderonline_reader",
+        "instance": "Custom"
+      },
+      "icon": "siyuan-reader-icon",
+      "instance": "Tab",
+      "pin": false,
+      "title": "微信读书 API Key"
+    },
+    {
+      "active": true,
+      "activeTime": "1789554027430",
+      "children": {
+        "customModelData": {},
+        "customModelType": "siyuan-sireaderweread",
+        "instance": "Custom"
+      },
+      "icon": "iconWeread",
+      "instance": "Tab",
+      "pin": false,
+      "title": "微信读书"
+    },
+    {
+      "active": true,
+      "activeTime": "1789554074312",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260916182105-igesf8b",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260916172223-kt9y5uv",
+        "rootId": "20260916182105-igesf8b"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "未命名文档"
+    },
+    {
+      "active": true,
+      "activeTime": "1789554076505",
+      "children": {
+        "customModelData": {
+          "bookInfo": {
+            "added": 1789553880363,
+            "annotationCount": 0,
+            "author": "未知作者",
+            "bindDocId": "",
+            "bindDocName": "",
+            "chapter": 0,
+            "cover": "",
+            "dataId": "data-052d14df108f0ad2f1ed0c26ea5ad23e543c92be7283796fe00906507a5d6aa4",
+            "fingerprint": "url:asset://assets/toffee-20260916181756-ijslobq.pdf",
+            "finished": 0,
+            "format": "pdf",
+            "groups": [],
+            "meta": {},
+            "path": "assets/toffee-20260916181756-ijslobq.pdf",
+            "pos": {},
+            "progress": 0,
+            "rating": 0,
+            "read": 1789553880363,
+            "size": 0,
+            "status": "unread",
+            "tags": [],
+            "time": 0,
+            "title": "toffee-20260916181756-ijslobq",
+            "total": 0,
+            "url": "asset://assets/toffee-20260916181756-ijslobq.pdf"
+          }
+        },
+        "customModelType": "siyuan-sireadercustom_tab_book_reader",
+        "instance": "Custom"
+      },
+      "icon": "siyuan-reader-icon",
+      "instance": "Tab",
+      "pin": false,
+      "title": "toffee-20260916181756-ijslobq"
+    },
+    {
+      "active": true,
+      "activeTime": "1789554336128",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260916172228-hnir0dj",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260916172223-kt9y5uv",
+        "rootId": "20260916172228-hnir0dj"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "未命名文档"
+    },
+    {
+      "activeTime": "1789554514195",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260916182833-5a5nzl5",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260915211915-3vjivq8",
+        "rootId": "20260916182833-5a5nzl5"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "未命名文档"
+    },
+    {
+      "active": true,
+      "activeTime": "1789554526047",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260915211917-u5vdf2v",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260915211915-3vjivq8",
+        "rootId": "20260915211917-u5vdf2v"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "1111111"
+    },
+    {
+      "active": true,
+      "activeTime": "1789554776292",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260916183256-uoc8fqi",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260916183231-ddw3yjs",
+        "rootId": "20260916183256-uoc8fqi"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "未命名文档"
+    },
+    {
+      "active": true,
+      "activeTime": "1789554823868",
+      "children": {
+        "config": {
+          "group": 0,
+          "hPath": "",
+          "hasReplace": false,
+          "idPath": [],
+          "k": "#爱丽涵第一季#",
+          "method": 0,
+          "page": 1,
+          "query": "#爱丽涵第一季#",
+          "r": "",
+          "removed": true,
+          "replaceTypes": {
+            "aHref": true,
+            "aText": true,
+            "aTitle": true,
+            "blockRef": true,
+            "code": true,
+            "codeBlock": true,
+            "docTitle": true,
+            "em": true,
+            "fileAnnotationRef": true,
+            "htmlBlock": true,
+            "imgSrc": true,
+            "imgText": true,
+            "imgTitle": true,
+            "inlineMath": true,
+            "inlineMemo": true,
+            "kbd": true,
+            "mark": true,
+            "mathBlock": true,
+            "s": true,
+            "strong": true,
+            "sub": true,
+            "sup": true,
+            "tag": true,
+            "text": true,
+            "u": true
+          },
+          "sensitive": false,
+          "sort": 0,
+          "subTypes": {
+            "h1": false,
+            "h2": false,
+            "h3": false,
+            "h4": false,
+            "h5": false,
+            "h6": false,
+            "o": false,
+            "t": false,
+            "u": false
+          },
+          "types": {
+            "audioBlock": false,
+            "blockquote": false,
+            "callout": false,
+            "codeBlock": true,
+            "databaseBlock": true,
+            "document": true,
+            "embedBlock": false,
+            "heading": true,
+            "htmlBlock": true,
+            "iframeBlock": false,
+            "list": false,
+            "listItem": false,
+            "mathBlock": true,
+            "paragraph": true,
+            "superBlock": false,
+            "tabItem": true,
+            "table": true,
+            "tabs": false,
+            "videoBlock": false,
+            "widgetBlock": false
+          }
+        },
+        "instance": "Search"
+      },
+      "icon": "iconSearch",
+      "instance": "Tab",
+      "pin": false,
+      "title": "搜索"
+    },
+    {
+      "activeTime": "1789554717354",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260916173906-xqq97e8",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260915223914-im2p0i4",
+        "rootId": "20260916173906-xqq97e8"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "LeetCode 4. 寻找两个正序数组的中位数"
+    },
+    {
+      "activeTime": "1789554762596",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260916183232-25rho97",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260916183231-ddw3yjs",
+        "rootId": "20260916183232-25rho97"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "MC十年老兵报到！"
+    },
+    {
+      "activeTime": "1789554841721",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260916183232-z7ywujz",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260916183231-ddw3yjs",
+        "rootId": "20260916183232-z7ywujz"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "中秋快乐"
+    },
+    {
+      "activeTime": "1789554842248",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260916183232-yo89k8j",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260916183231-ddw3yjs",
+        "rootId": "20260916183232-yo89k8j"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "维度空间 之 爱丽涵环游仙境——（11）"
+    },
+    {
+      "activeTime": "1789554853917",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260916183232-s0tvsza",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260916183231-ddw3yjs",
+        "rootId": "20260916183232-s0tvsza"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "与故人梦中叙"
+    },
+    {
+      "activeTime": "1789554858150",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260916183232-pi3z0fi",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260916183231-ddw3yjs",
+        "rootId": "20260916183232-pi3z0fi"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "默元第一论断"
+    },
+    {
+      "activeTime": "1789555237060",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260916183232-z7ywujz",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260916183231-ddw3yjs",
+        "rootId": "20260916183232-z7ywujz"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "中秋快乐"
+    },
+    {
+      "activeTime": "1789555347085",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260915200552-xjnuoxo",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260915200550-1s8rqlr",
+        "rootId": "20260915200552-xjnuoxo"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "择校"
+    },
+    {
+      "activeTime": "1789555367696",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260916183232-tmcqf11",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260916183231-ddw3yjs",
+        "rootId": "20260916183232-tmcqf11"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "梧桐月"
+    },
+    {
+      "activeTime": "1789560217524",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260915225309-0occome",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260915223914-im2p0i4",
+        "rootId": "20260915225309-0occome"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "LeetCode 1. 两数之和"
+    },
+    {
+      "activeTime": "1789560224912",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260916183232-pgir0qp",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260916183231-ddw3yjs",
+        "rootId": "20260916183232-pgir0qp"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "无意义证章"
+    },
+    {
+      "activeTime": "1789560376098",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260916183232-igp7qxq",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260916183231-ddw3yjs",
+        "rootId": "20260916183232-igp7qxq"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "漫长冬日"
+    },
+    {
+      "activeTime": "1789560377437",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260916183232-5rzkfsi",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260916183231-ddw3yjs",
+        "rootId": "20260916183232-5rzkfsi"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "元子眼见疏"
+    },
+    {
+      "activeTime": "1789560378802",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260916183232-25rho97",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260916183231-ddw3yjs",
+        "rootId": "20260916183232-25rho97"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "MC十年老兵报到！"
+    },
+    {
+      "activeTime": "1789807811438",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260916183232-yo89k8j",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260916200808-s9e2jby",
+        "rootId": "20260916183232-yo89k8j"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "维度空间 之 爱丽涵环游仙境——（11）"
+    },
+    {
+      "activeTime": "1790304098817",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260919173836-270y71f",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260919165047-tuyncz4",
+        "rootId": "20260919173836-270y71f"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "密码管理器Aegis"
+    },
+    {
+      "active": true,
+      "activeTime": "1790304735925",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260925105215-9tpi3lq",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260925104228-i9y4wde",
+        "rootId": "20260925105215-9tpi3lq"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "未命名文档"
+    },
+    {
+      "activeTime": "1790304113785",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260919165048-6q3se7c",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260919165047-tuyncz4",
+        "rootId": "20260919165048-6q3se7c"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "QQ"
+    },
+    {
+      "activeTime": "1790304743212",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260925105054-gohulkc",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260925104228-i9y4wde",
+        "rootId": "20260925105054-gohulkc"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "资料库"
+    },
+    {
+      "activeTime": "1790304821382",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260925105053-b5v65cf",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260925104228-i9y4wde",
+        "rootId": "20260925105053-b5v65cf"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "课程与备考"
+    },
+    {
+      "active": true,
+      "activeTime": "1790305856517",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260925111056-pd2e7zj",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260925104228-i9y4wde",
+        "rootId": "20260925111056-pd2e7zj"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "未命名文档"
+    },
+    {
+      "activeTime": "1790305863696",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260925104723-er8l376",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260925104228-i9y4wde",
+        "rootId": "20260925104723-er8l376"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "2026-09-25"
+    },
+    {
+      "active": true,
+      "activeTime": "1790305897190",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260925104723-1e6a35q",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260925104228-i9y4wde",
+        "rootId": "20260925104723-1e6a35q"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "2026"
+    },
+    {
+      "activeTime": "1790305946147",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260925111225-y96f93h",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260925104228-i9y4wde",
+        "rootId": "20260925111225-y96f93h"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "2026-09-25"
+    },
+    {
+      "activeTime": "1790305909443",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260925104723-35sj54d",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260925104228-i9y4wde",
+        "rootId": "20260925104723-35sj54d"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "daily note"
+    },
+    {
+      "activeTime": "1790306353487",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260925111707-25ivbtd",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260925104228-i9y4wde",
+        "rootId": "20260925111707-25ivbtd"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "20260925111707"
+    },
+    {
+      "active": true,
+      "activeTime": "1790306389739",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260925111904-axzuxtp",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260925104228-i9y4wde",
+        "rootId": "20260925111904-axzuxtp"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "20260925"
+    },
+    {
+      "activeTime": "1790304824602",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260925104647-g3cls2o",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260925104228-i9y4wde",
+        "rootId": "20260925104647-g3cls2o"
+      },
+      "docIcon": "1f4da",
+      "instance": "Tab",
+      "pin": false,
+      "title": "学习"
+    },
+    {
+      "activeTime": "1790304839248",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260925104647-iy6t6mc",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260925104228-i9y4wde",
+        "rootId": "20260925104647-iy6t6mc"
+      },
+      "docIcon": "1f331",
+      "instance": "Tab",
+      "pin": false,
+      "title": "生活"
+    },
+    {
+      "activeTime": "1790304845358",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260925104230-4p8v591",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260925104228-i9y4wde",
+        "rootId": "20260925104230-4p8v591"
+      },
+      "docIcon": "1f3e0",
+      "instance": "Tab",
+      "pin": false,
+      "title": "首页"
+    },
+    {
+      "activeTime": "1790306012948",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20210110175347-2xrwoiq",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20210808180117-czj9bvb",
+        "rootId": "20210110175347-2xrwoiq"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "日记"
+    },
+    {
+      "active": true,
+      "activeTime": "1790307123047",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260925105056-2deingq",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260925104228-i9y4wde",
+        "rootId": "20260925105056-2deingq"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "诗词"
+    },
+    {
+      "activeTime": "1790306423478",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260925111707-62operl",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260925104228-i9y4wde",
+        "rootId": "20260925111707-62operl"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "notes"
+    },
+    {
+      "activeTime": "1790307387186",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20200812220555-lj3enxa",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20210808180117-czj9bvb",
+        "rootId": "20200812220555-lj3enxa"
+      },
+      "docIcon": "1f389",
+      "instance": "Tab",
+      "pin": false,
+      "title": "请从这里开始"
+    },
+    {
+      "activeTime": "1790307450676",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20200825162036-4dx365o",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20210808180117-czj9bvb",
+        "rootId": "20200825162036-4dx365o"
+      },
+      "docIcon": "1f4f0",
+      "instance": "Tab",
+      "pin": false,
+      "title": "排版元素"
+    },
+    {
+      "activeTime": "1790307433744",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20221016213308-uz5af79",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20210808180117-czj9bvb",
+        "rootId": "20221016213308-uz5af79"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "标题与列表混合排版"
+    },
+    {
+      "activeTime": "1790306982119",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260925112024-0ffdmak",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260925104228-i9y4wde",
+        "rootId": "20260925112024-0ffdmak"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "随想"
+    },
+    {
+      "activeTime": "1790307138925",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260925105056-3h6uq31",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260925104228-i9y4wde",
+        "rootId": "20260925105056-3h6uq31"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "摘抄"
+    },
+    {
+      "activeTime": "1790307146517",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260925113226-tx8epj2",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260925104228-i9y4wde",
+        "rootId": "20260925113226-tx8epj2"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "POEM SET"
+    },
+    {
+      "activeTime": "1790307322474",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260925113019-pdfxc14",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260925104228-i9y4wde",
+        "rootId": "20260925113019-pdfxc14"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "STORY SET"
+    },
+    {
+      "activeTime": "1790346050673",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260916183232-yo89k8j",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260925104228-i9y4wde",
+        "rootId": "20260916183232-yo89k8j"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "爱丽涵第一季"
+    },
+    {
+      "activeTime": "1790346388064",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260925105054-70zgg0e",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260925104228-i9y4wde",
+        "rootId": "20260925105054-70zgg0e"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "技能与工具"
+    },
+    {
+      "active": true,
+      "activeTime": "1790346656919",
+      "children": {
+        "customModelData": {
+          "avID": "20240208155918-uylgwbj",
+          "blockID": "20240208155914-zazoj5v",
+          "boundBlockID": "",
+          "databaseBlockID": "20240208155914-zazoj5v",
+          "isDetached": true,
+          "itemID": "20240208160855-iv1fsnu",
+          "notebookID": "20210808180117-czj9bvb",
+          "notebookId": "20210808180117-czj9bvb",
+          "title": "海底两万里",
+          "valueID": "20240208160855-dprfuou"
+        },
+        "customModelType": "siyuan-database-row",
+        "instance": "Custom"
+      },
+      "icon": "iconDatabase",
+      "instance": "Tab",
+      "pin": false,
+      "title": "海底两万里"
+    },
+    {
+      "activeTime": "1790346391976",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260925105054-fh6its8",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260925104228-i9y4wde",
+        "rootId": "20260925105054-fh6its8"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "读书笔记"
+    },
+    {
+      "activeTime": "1790346403265",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260925105053-b5v65cf",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260925104228-i9y4wde",
+        "rootId": "20260925105053-b5v65cf"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "课程"
+    },
+    {
+      "activeTime": "1790346524311",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260925222646-3lvkumg",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260925104228-i9y4wde",
+        "rootId": "20260925222646-3lvkumg"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "备考"
+    },
+    {
+      "active": true,
+      "activeTime": "1790347316609",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260911231458-j0t5a1o",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260911231458-6a975nv",
+        "rootId": "20260911231458-j0t5a1o"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "全新的开始"
+    },
+    {
+      "activeTime": "1790346547054",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20210808180320-fqgskfj",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20210808180117-czj9bvb",
+        "rootId": "20210808180320-fqgskfj"
+      },
+      "docIcon": "1f36b",
+      "instance": "Tab",
+      "pin": false,
+      "title": "内容块"
+    },
+    {
+      "activeTime": "1790346548594",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20200813004931-q4cu8na",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20210808180117-czj9bvb",
+        "rootId": "20200813004931-q4cu8na"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "什么是内容块"
+    },
+    {
+      "activeTime": "1790347445505",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20210824201257-cy7icrc",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20210808180117-czj9bvb",
+        "rootId": "20210824201257-cy7icrc"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "挂件"
+    },
+    {
+      "activeTime": "1790346587466",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20200813131152-0wk5akh",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20210808180117-czj9bvb",
+        "rootId": "20200813131152-0wk5akh"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "在内容块中遨游"
+    },
+    {
+      "activeTime": "1790346576325",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20200905090211-2vixtlf",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20210808180117-czj9bvb",
+        "rootId": "20200905090211-2vixtlf"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "内容块类型"
+    },
+    {
+      "activeTime": "1790346730975",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260613155453-n1se73o",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20210808180117-czj9bvb",
+        "rootId": "20260613155453-n1se73o"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "字段类型"
+    },
+    {
+      "activeTime": "1790346662717",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20240208113259-nykkvaq",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20210808180117-czj9bvb",
+        "rootId": "20240208113259-nykkvaq"
+      },
+      "docIcon": "1f5c3-fe0f",
+      "instance": "Tab",
+      "pin": false,
+      "title": "数据库"
+    },
+    {
+      "activeTime": "1790347453858",
+      "children": {
+        "action": "cb-get-scroll",
+        "blockId": "20260925222646-3lvkumg",
+        "instance": "Editor",
+        "mode": "wysiwyg",
+        "notebookId": "20260925104228-i9y4wde",
+        "rootId": "20260925222646-3lvkumg"
+      },
+      "docIcon": "",
+      "instance": "Tab",
+      "pin": false,
+      "title": "备考"
+    }
+  ],
+  "local-dailynoteid": "20260925104228-i9y4wde",
+  "local-exportimg": {
+    "keepFold": false,
+    "watermark": false
+  },
+  "local-fileposition": {
+    "20200813004931-q4cu8na": {
+      "endId": "20230419153207-l40wjv2",
+      "rootId": "20200813004931-q4cu8na",
+      "scrollTop": 1276,
+      "startId": "20210118100623-i00rgj0"
+    },
+    "20200813131152-0wk5akh": {
+      "endId": "20221026221105-dyj8l8n",
+      "rootId": "20200813131152-0wk5akh",
+      "scrollTop": 1432,
+      "startId": "20210104090757-ig8gk5o"
+    },
+    "20200905090211-2vixtlf": {
+      "endId": "20210104090624-vsksysm",
+      "rootId": "20200905090211-2vixtlf",
+      "scrollTop": 840,
+      "startId": "20210104090624-fkv1xsc"
+    },
+    "20210110175347-2xrwoiq": {
+      "endId": "20260613180727-jq56n4m",
+      "rootId": "20210110175347-2xrwoiq",
+      "scrollTop": 948,
+      "startId": "20260613180438-q02mnqc"
+    },
+    "20210808180320-fqgskfj": {
+      "endId": "20240507235241-a37u0gy",
+      "rootId": "20210808180320-fqgskfj",
+      "scrollTop": 0,
+      "startId": "20240507235241-gp3vbz4"
+    },
+    "20210824201257-cy7icrc": {
+      "endId": "20221114172636-pirwdpa",
+      "rootId": "20210824201257-cy7icrc",
+      "scrollTop": 156,
+      "startId": "20210824201352-apdkqps"
+    },
+    "20240113102857-c63dmo5": {
+      "endId": "20260613181406-4uql2vg",
+      "rootId": "20240113102857-c63dmo5",
+      "scrollTop": 2519,
+      "startId": "20240113102857-aof1w7f"
+    },
+    "20240208113259-nykkvaq": {
+      "endId": "20260613194228-iha8ygq",
+      "focusEnd": 492,
+      "focusId": "20240208155807-kf97pho",
+      "focusStart": 492,
+      "rootId": "20240208113259-nykkvaq",
+      "scrollTop": 5628,
+      "startId": "20260613162748-v93usth"
+    },
+    "20260613155453-n1se73o": {
+      "endId": "20260613155453-o1cj0kr",
+      "rootId": "20260613155453-n1se73o",
+      "scrollTop": 0,
+      "startId": "20260613155453-unck12x"
+    },
+    "20260911231458-j0t5a1o": {
+      "endId": "20260911231458-45ajejp",
+      "focusEnd": 988,
+      "focusId": "20260925223557-d7su5xr",
+      "focusStart": 988,
+      "rootId": "20260911231458-j0t5a1o",
+      "scrollTop": 0,
+      "startId": "20260925223557-d7su5xr"
+    },
+    "20260915211917-u5vdf2v": {
+      "endId": "20260915220425-e01qi1h",
+      "focusEnd": 0,
+      "focusId": "20260915211917-aykgo5d",
+      "focusStart": 0,
+      "rootId": "20260915211917-u5vdf2v",
+      "scrollTop": 0,
+      "startId": "20260915211917-aykgo5d"
+    },
+    "20260915225309-0occome": {
+      "endId": "20260915225309-t6s9tly",
+      "rootId": "20260915225309-0occome",
+      "scrollTop": 0,
+      "startId": "20260915225309-hhymgo9"
+    },
+    "20260916172228-hnir0dj": {
+      "endId": "20260916182608-fcreygs",
+      "focusEnd": 0,
+      "focusId": "20260916172228-hnir0dj",
+      "focusStart": 0,
+      "rootId": "20260916172228-hnir0dj",
+      "scrollTop": 0,
+      "startId": "20260916172228-y6feo8p"
+    },
+    "20260916173906-xqq97e8": {
+      "endId": "20260916173906-fcignr3",
+      "rootId": "20260916173906-xqq97e8",
+      "scrollTop": 0,
+      "startId": "20260916173906-krvags9"
+    },
+    "20260916182105-igesf8b": {
+      "endId": "20260916182105-lnjs4bg",
+      "focusEnd": 0,
+      "focusId": "20260916182105-lnjs4bg",
+      "focusStart": 0,
+      "rootId": "20260916182105-igesf8b",
+      "scrollTop": 0,
+      "startId": "20260916182105-lnjs4bg"
+    },
+    "20260916183232-25rho97": {
+      "endId": "20260916200626-7cxprw0",
+      "focusEnd": 10,
+      "focusId": "20260916200626-7cxprw0",
+      "focusStart": 10,
+      "rootId": "20260916183232-25rho97",
+      "scrollTop": 0,
+      "startId": "20260916183232-z1gdcl9"
+    },
+    "20260916183232-5rzkfsi": {
+      "endId": "20260916183232-qpxstkl",
+      "rootId": "20260916183232-5rzkfsi",
+      "scrollTop": 0,
+      "startId": "20260916183232-qpxstkl"
+    },
+    "20260916183232-igp7qxq": {
+      "endId": "20260916183232-2g5ctjp",
+      "rootId": "20260916183232-igp7qxq",
+      "scrollTop": 0,
+      "startId": "20260916183232-2g5ctjp"
+    },
+    "20260916183232-pgir0qp": {
+      "endId": "20260916200348-ruhfien",
+      "focusEnd": 34,
+      "focusId": "20260916183232-96fx0n5",
+      "focusStart": 34,
+      "rootId": "20260916183232-pgir0qp",
+      "scrollTop": 0,
+      "startId": "20260916183232-96fx0n5"
+    },
+    "20260916183232-pi3z0fi": {
+      "endId": "20260916183232-9gukk8j",
+      "focusEnd": 778,
+      "focusId": "20260916183232-dee28bl",
+      "focusStart": 778,
+      "rootId": "20260916183232-pi3z0fi",
+      "scrollTop": 0,
+      "startId": "20260916183232-dee28bl"
+    },
+    "20260916183232-s0tvsza": {
+      "endId": "20260916183232-4jes2aa",
+      "focusEnd": 65,
+      "focusId": "20260916183232-e0fyof4",
+      "focusStart": 65,
+      "rootId": "20260916183232-s0tvsza",
+      "scrollTop": 0,
+      "startId": "20260916183232-e0fyof4"
+    },
+    "20260916183232-yo89k8j": {
+      "endId": "20260916183232-eca5g2p",
+      "rootId": "20260916183232-yo89k8j",
+      "scrollTop": 0,
+      "startId": "20260925113548-k9djl1g"
+    },
+    "20260916183232-z7ywujz": {
+      "endId": "20260916183232-hy7ap55",
+      "focusEnd": 39,
+      "focusId": "20260916183232-hy7ap55",
+      "focusStart": 39,
+      "rootId": "20260916183232-z7ywujz",
+      "scrollTop": 0,
+      "startId": "20260916183232-hy7ap55"
+    },
+    "20260919165048-6q3se7c": {
+      "endId": "20260919165115-ubmfb5t",
+      "focusEnd": 10,
+      "focusId": "20260919165115-ubmfb5t",
+      "focusStart": 10,
+      "rootId": "20260919165048-6q3se7c",
+      "scrollTop": 0,
+      "startId": "20260919165048-qb0t0z8"
+    },
+    "20260919173836-270y71f": {
+      "endId": "20260919173836-6k3ohx6",
+      "rootId": "20260919173836-270y71f",
+      "scrollTop": 0,
+      "startId": "20260919173836-6k3ohx6"
+    },
+    "20260925104230-4p8v591": {
+      "endId": "20260925105502-2fcxrkl",
+      "rootId": "20260925104230-4p8v591",
+      "scrollTop": 464,
+      "startId": "20260925104230-pjxhkg1"
+    },
+    "20260925104647-g3cls2o": {
+      "endId": "20260925105114-pddmm0g",
+      "rootId": "20260925104647-g3cls2o",
+      "scrollTop": 42,
+      "startId": "20260925105114-e7wrjp1"
+    },
+    "20260925104647-iy6t6mc": {
+      "endId": "20260925105114-pk4mxpy",
+      "rootId": "20260925104647-iy6t6mc",
+      "scrollTop": 252,
+      "startId": "20260925105114-dajpmzt"
+    },
+    "20260925105053-b5v65cf": {
+      "endId": "20260925105053-8g14ms4",
+      "focusEnd": 0,
+      "focusId": "20260925105053-f93uzac",
+      "focusStart": 0,
+      "rootId": "20260925105053-b5v65cf",
+      "scrollTop": 0,
+      "startId": "20260925105053-f93uzac"
+    },
+    "20260925105054-gohulkc": {
+      "endId": "20260925105054-owt538g",
+      "rootId": "20260925105054-gohulkc",
+      "scrollTop": 0,
+      "startId": "20260925105054-0olzbkm"
+    },
+    "20260925105055-aqyqm9f": {
+      "endId": "20260925105055-ckuztky",
+      "rootId": "20260925105055-aqyqm9f",
+      "scrollTop": 0,
+      "startId": "20260925105055-egfwe7o"
+    },
+    "20260925105056-38ftpwp": {
+      "endId": "20260925105056-cz04fbw",
+      "rootId": "20260925105056-38ftpwp",
+      "scrollTop": 0,
+      "startId": "20260925105056-q6hjmk7"
+    },
+    "20260925105056-vldhw36": {
+      "endId": "20260925105056-naezk4k",
+      "rootId": "20260925105056-vldhw36",
+      "scrollTop": 0,
+      "startId": "20260925105056-3ia5100"
+    },
+    "20260925111707-62operl": {
+      "endId": "20260925111707-1zfptuz",
+      "rootId": "20260925111707-62operl",
+      "scrollTop": 0,
+      "startId": "20260925111707-1zfptuz"
+    },
+    "20260925112015-zyciqnm": {
+      "endId": "20260925112015-ztygrjt",
+      "rootId": "20260925112015-zyciqnm",
+      "scrollTop": 0,
+      "startId": "20260925112015-ztygrjt"
+    },
+    "20260925112024-0ffdmak": {
+      "endId": "20260925112024-m5fo5lo",
+      "rootId": "20260925112024-0ffdmak",
+      "scrollTop": 0,
+      "startId": "20260925112024-m5fo5lo"
+    },
+    "20260925113500-m4vh32o": {
+      "endId": "20260925113500-65s3gti",
+      "focusEnd": 0,
+      "focusId": "20260925113500-m4vh32o",
+      "focusStart": 0,
+      "rootId": "20260925113500-m4vh32o",
+      "scrollTop": 0,
+      "startId": "20260925113500-65s3gti"
+    },
+    "20260925222646-3lvkumg": {
+      "endId": "20260925222646-xaivn2y",
+      "rootId": "20260925222646-3lvkumg",
+      "scrollTop": 0,
+      "startId": "20260925222646-xaivn2y"
+    },
+    "20260925224417-r7nk028": {
+      "endId": "20260925224417-r6p76zf",
+      "rootId": "20260925224417-r7nk028",
+      "scrollTop": 0,
+      "startId": "20260925224417-r6p76zf"
+    },
+    "20260925224430-72xdufo": {
+      "endId": "20260925224430-yipt715",
+      "rootId": "20260925224430-72xdufo",
+      "scrollTop": 0,
+      "startId": "20260925224430-yipt715"
+    },
+    "20260926205244-ziz0hjj": {
+      "endId": "20260926210010-1oh9btg",
+      "focusEnd": 7,
+      "focusId": "20260926205848-svbupiw",
+      "focusStart": 7,
+      "rootId": "20260926205244-ziz0hjj",
+      "scrollTop": 0,
+      "startId": "20260926210020-v30k0jk"
+    }
+  },
+  "local-filespaths": [
+    {
+      "notebookId": "20260915200550-1s8rqlr",
+      "openPaths": [
+        "/20260915200552-xjnuoxo.sy"
+      ]
+    },
+    {
+      "notebookId": "20260916183231-ddw3yjs",
+      "openPaths": [
+        "/20260916183232-z7ywujz.sy"
+      ]
+    },
+    {
+      "notebookId": "20260925104228-i9y4wde",
+      "openPaths": [
+        "/20260925111707-62operl/20260925112015-zyciqnm.sy",
+        "/20260925104648-0iaysvu/20260925113019-pdfxc14/20260916183232-yo89k8j.sy"
+      ]
+    }
+  ],
+  "local-fontstyles": [
+    "backgroundColor​var(--b3-font-background10)",
+    "backgroundColor​var(--b3-font-background2)"
+  ],
+  "local-plugin-docks": {
+    "siyuan-jsdraw-plugin": {},
+    "siyuan-kmind-zen": {
+      "siyuan-kmind-zenDock": {
+        "hotkey": "",
+        "icon": "iconKmindZenDock",
+        "index": 1000,
+        "position": "LeftBottom",
+        "size": {
+          "height": 0,
+          "width": 240
+        },
+        "title": "KMind Zen"
+      }
+    },
+    "siyuan-moon-export": {},
+    "siyuan-plugin-copilot": {
+      "siyuan-plugin-copilotai-chat-sidebar": {
+        "hotkey": "",
+        "icon": "iconCopilot",
+        "index": 1000,
+        "position": "RightBottom",
+        "show": false,
+        "size": {
+          "height": null,
+          "width": 400
+        },
+        "title": "Copilot"
+      }
+    },
+    "siyuan-plugin-localbrowse": {
+      "siyuan-plugin-localbrowsecd_filetree": {
+        "hotkey": "",
+        "icon": "iconLocalBrowse",
+        "index": 1000,
+        "position": "RightTop",
+        "show": false,
+        "size": {
+          "height": 600,
+          "width": 300
+        },
+        "title": "本地文件"
+      }
+    },
+    "siyuan-plugin-task-list": {
+      "siyuan-plugin-task-listdock_tab": {
+        "hotkey": "⇧⌘T",
+        "icon": "tl-task",
+        "index": 1000,
+        "position": "RightTop",
+        "show": true,
+        "size": {
+          "height": null,
+          "width": 427
+        },
+        "title": "任务列表"
+      }
+    },
+    "siyuan-plugins-mcp-sisyphus": {
+      "siyuan-plugins-mcp-sisyphussisyphusSnapshotDock": {
+        "hotkey": "",
+        "icon": "iconSisyphusSnapshotDock",
+        "index": 1000,
+        "position": "LeftTop",
+        "show": false,
+        "size": {
+          "height": 0,
+          "width": 320
+        },
+        "title": "文档快照"
+      },
+      "siyuan-plugins-mcp-sisyphussisyphusTimelineDock": {
+        "hotkey": "",
+        "icon": "iconSisyphusTimelineDock",
+        "index": 1000,
+        "position": "RightBottom",
+        "show": false,
+        "size": {
+          "height": 0,
+          "width": 720
+        },
+        "title": "文档 Diff"
+      }
+    },
+    "siyuan-sireader": {
+      "siyuan-sireaderreader": {
+        "hotkey": "",
+        "icon": "siyuan-reader-icon",
+        "index": 1000,
+        "position": "RightTop",
+        "show": false,
+        "size": {
+          "height": 580,
+          "width": 680
+        },
+        "title": "思阅"
+      }
+    }
+  },
+  "local-searchdata": {
+    "group": 0,
+    "hPath": "",
+    "hasReplace": false,
+    "idPath": [],
+    "k": "#爱丽涵第一季#",
+    "method": 0,
+    "page": 1,
+    "query": "#爱丽涵第一季#",
+    "r": "",
+    "removed": true,
+    "replaceTypes": {
+      "aHref": true,
+      "aText": true,
+      "aTitle": true,
+      "blockRef": true,
+      "code": true,
+      "codeBlock": true,
+      "docTitle": true,
+      "em": true,
+      "fileAnnotationRef": true,
+      "htmlBlock": true,
+      "imgSrc": true,
+      "imgText": true,
+      "imgTitle": true,
+      "inlineMath": true,
+      "inlineMemo": true,
+      "kbd": true,
+      "mark": true,
+      "mathBlock": true,
+      "s": true,
+      "strong": true,
+      "sub": true,
+      "sup": true,
+      "tag": true,
+      "text": true,
+      "u": true
+    },
+    "sort": 0,
+    "subTypes": {
+      "h1": false,
+      "h2": false,
+      "h3": false,
+      "h4": false,
+      "h5": false,
+      "h6": false,
+      "o": false,
+      "t": false,
+      "u": false
+    },
+    "types": {
+      "audioBlock": false,
+      "blockquote": false,
+      "callout": false,
+      "codeBlock": true,
+      "databaseBlock": true,
+      "document": true,
+      "embedBlock": false,
+      "heading": true,
+      "htmlBlock": true,
+      "iframeBlock": false,
+      "list": false,
+      "listItem": false,
+      "mathBlock": true,
+      "paragraph": true,
+      "superBlock": false,
+      "tabItem": true,
+      "table": true,
+      "tabs": false,
+      "videoBlock": false,
+      "widgetBlock": false
+    }
+  },
+  "local-searchkeys": {
+    "col": "",
+    "colTab": "",
+    "keys": [
+      "#爱丽涵第一季#",
+      "secrets",
+      ""
+    ],
+    "layout": 0,
+    "layoutTab": 0,
+    "replaceKeys": [],
+    "row": "",
+    "rowTab": ""
+  },
+  "plugin-task-list-filters": {
+    "dateRangeFormat": "static",
+    "dockCalendarDisplayMode": "weekly",
+    "dynamicDateRange": "",
+    "staticDateRange": [],
+    "taskFilterWay": "monthRange"
+  },
+  "plugin-task-list-settings": {
+    "infoCardConfig": {
+      "dateTimeDisplayMode": "date",
+      "fieldsForHidden": []
+    },
+    "nodeListForHideTask": [],
+    "taskSortBy": "createdAsc",
+    "taskTreeDisplayMode": "box-doc-task"
+  },
+  "plugin-task-list-taskRangeTabClicked": "doc"
+}

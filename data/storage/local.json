@@ -1,6 +1,6 @@
 {
   "kmind-zen:license:lastKnownSiyuanId": "1789139779047",
-  "kmind-zen:license:lastSeenAtMs": "1790472060116",
+  "kmind-zen:license:lastSeenAtMs": "1790474186140",
   "kmind-zen:siyuan:onboarding:v1:seen": "1",
   "kmind-zen:updateDialog:state:v1": "{\"initialized\":{\"siyuan\":true},\"lastObservedVersion\":{\"siyuan\":\"0.44.0\"},\"readVersions\":{\"updateDialog.readVersion.siyuan.0.44.0\":true},\"pendingReminderVersion\":{},\"noticeExposed\":{},\"noticeClicked\":{},\"tutorialExposed\":{},\"tutorialClicked\":{}}",
   "local-bazaar": {
@@ -1259,10 +1259,7 @@
       "startId": "20260925113548-k9djl1g"
     },
     "20260916183232-z7ywujz": {
-      "endId": "20260916183232-hy7ap55",
-      "focusEnd": 39,
-      "focusId": "20260916183232-hy7ap55",
-      "focusStart": 39,
+      "endId": "20260927092749-b1ormo2",
       "rootId": "20260916183232-z7ywujz",
       "scrollTop": 0,
       "startId": "20260916183232-hy7ap55"
@@ -1380,9 +1377,6 @@
     },
     "20260926205244-ziz0hjj": {
       "endId": "20260926210010-1oh9btg",
-      "focusEnd": 7,
-      "focusId": "20260926205848-svbupiw",
-      "focusStart": 7,
       "rootId": "20260926205244-ziz0hjj",
       "scrollTop": 0,
       "startId": "20260926210020-v30k0jk"
@@ -1405,7 +1399,7 @@
       "notebookId": "20260925104228-i9y4wde",
       "openPaths": [
         "/20260925111707-62operl/20260925112015-zyciqnm.sy",
-        "/20260925104648-0iaysvu/20260925113019-pdfxc14/20260916183232-yo89k8j.sy"
+        "/20260925104648-0iaysvu/20260925113226-tx8epj2.sy"
       ]
     }
   ],
@@ -1443,6 +1437,8 @@
         "title": "Copilot"
       }
     },
+    "siyuan-plugin-drawnix": {},
+    "siyuan-plugin-embedding-pdf": {},
     "siyuan-plugin-localbrowse": {
       "siyuan-plugin-localbrowsecd_filetree": {
         "hotkey": "",

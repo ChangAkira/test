@@ -1,0 +1,16 @@
+{
+  "name": "1",
+  "sort": 5,
+  "icon": "",
+  "closed": true,
+  "refCreateSaveBox": "",
+  "refCreateSavePath": "",
+  "docCreateSaveBox": "",
+  "docCreateSavePath": "",
+  "docCreateTemplatePath": "",
+  "dailyNoteSavePath": "/daily note/{{now | date \"2006/01\"}}/{{now | date \"2006-01-02\"}}",
+  "dailyNoteTemplatePath": "",
+  "sortMode": 15,
+  "encrypted": false,
+  "boxCrypt": null
+}

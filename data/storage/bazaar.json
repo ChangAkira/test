@@ -7,12 +7,6 @@
 				"repoURL": "https://github.com/xstarling/sy-git-sync-plugin",
 				"repoRef": "v0.3.0"
 			},
-			"Neo-Plus": {
-				"installTime": 1789484905457,
-				"updateTime": 0,
-				"repoURL": "https://github.com/QYLexpired/Neo-Plus",
-				"repoRef": "v1.6.2"
-			},
 			"siyuan-arxiv-paper-download": {
 				"installTime": 1789554163253,
 				"updateTime": 0,
@@ -24,18 +18,6 @@
 				"updateTime": 0,
 				"repoURL": "https://github.com/TheAjaykrishnanR/siyuan-desmos-graphing",
 				"repoRef": "0.1.1"
-			},
-			"siyuan-github-publish-plugin": {
-				"installTime": 1789481255773,
-				"updateTime": 0,
-				"repoURL": "https://github.com/sonicrang/siyuan-github-publish-plugin",
-				"repoRef": "v0.1.0"
-			},
-			"siyuan-github-sync": {
-				"installTime": 1789476063905,
-				"updateTime": 0,
-				"repoURL": "https://github.com/cyprien63/siyuan-plugin",
-				"repoRef": "V9"
 			},
 			"siyuan-kmind-zen": {
 				"installTime": 1790347199851,
@@ -55,18 +37,6 @@
 				"repoURL": "https://github.com/Achuan-2/siyuan-plugin-copilot",
 				"repoRef": "v2.8.4"
 			},
-			"siyuan-plugin-drawnix": {
-				"installTime": 1789553625457,
-				"updateTime": 0,
-				"repoURL": "https://github.com/Achuan-2/siyuan-plugin-drawnix",
-				"repoRef": "v0.0.6"
-			},
-			"siyuan-plugin-embedding-pdf": {
-				"installTime": 1789554209632,
-				"updateTime": 0,
-				"repoURL": "https://github.com/muhanstudio/siyuan-plugin-embedding-pdf",
-				"repoRef": "0.2.0"
-			},
 			"siyuan-plugin-localbrowse": {
 				"installTime": 1789553431318,
 				"updateTime": 1789553431698,
@@ -79,35 +49,17 @@
 				"repoURL": "https://github.com/zxhd863943427/siyuan-plugin-math-enhance",
 				"repoRef": "v0.0.7"
 			},
-			"siyuan-plugin-task-list": {
-				"installTime": 1790427359116,
+			"siyuan-plugin-publisher": {
+				"installTime": 1790473145167,
 				"updateTime": 0,
-				"repoURL": "https://github.com/syh19/siyuan-plugin-task-list",
-				"repoRef": "v1.1.9"
-			},
-			"siyuan-plugins-mcp-sisyphus": {
-				"installTime": 1789479606807,
-				"updateTime": 0,
-				"repoURL": "https://github.com/yangtaihong59/siyuan-plugins-mcp-sisyphus",
-				"repoRef": "v0.6.7"
+				"repoURL": "https://github.com/terwer/siyuan-plugin-publisher",
+				"repoRef": "siyuan-plugin-publisher-v2.1.0"
 			},
 			"siyuan-rin-publisher": {
 				"installTime": 1789553331568,
 				"updateTime": 0,
 				"repoURL": "https://github.com/MianJu28/siyuan-rin-publisher",
 				"repoRef": "v0.4.4"
-			},
-			"siyuan-sireader": {
-				"installTime": 1789553817170,
-				"updateTime": 0,
-				"repoURL": "https://github.com/mm-o/siyuan-sireader",
-				"repoRef": "v2.2.8"
-			},
-			"siyuan-sketch-note": {
-				"installTime": 1789553211476,
-				"updateTime": 0,
-				"repoURL": "https://github.com/famotime/siyuan-sketch-note",
-				"repoRef": "v0.9.0"
 			},
 			"siyuan-todoist-sync": {
 				"installTime": 1790427422172,
@@ -116,21 +68,8 @@
 				"repoRef": "v1.0.3"
 			}
 		},
-		"templates": {
-			"notbyai": {
-				"installTime": 1789485743151,
-				"updateTime": 0,
-				"repoURL": "https://github.com/L1cardo/siyuan-template-notbyai",
-				"repoRef": "v0.0.1"
-			}
-		},
+		"templates": {},
 		"themes": {
-			"Neo": {
-				"installTime": 1789484880316,
-				"updateTime": 0,
-				"repoURL": "https://github.com/QYLexpired/Neo",
-				"repoRef": "v1.6.2"
-			},
 			"Zhihu": {
 				"installTime": 1789485317535,
 				"updateTime": 0,
